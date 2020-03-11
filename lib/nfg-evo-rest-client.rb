@@ -1,7 +1,7 @@
 require "nfg-evo-rest-client/version"
+require "nfg-evo-rest-client/configuration"
 require "nfg-evo-rest-client/base"
 require "nfg-evo-rest-client/admin"
-require "nfg-evo-rest-client/configuration"
 require "nfg-evo-rest-client/donation"
 require "nfg-evo-rest-client/donor"
 require "nfg-evo-rest-client/entity"
