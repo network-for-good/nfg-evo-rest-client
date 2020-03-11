@@ -1,8 +1,9 @@
-# Nfg::Evo::Rest::Client
+# NfgEvoRestClient
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/nfg/evo/rest/client`. To experiment with that code, run `bin/console` for an interactive prompt.
+Uses the Flexirest gem to provide a wrapper to the EVO/Fundraising Pages API.
 
-TODO: Delete this and the text above, and describe your gem
+This is primarily used by DM, but could also be used by other applications that need access to the api.
+
 
 ## Installation
 
