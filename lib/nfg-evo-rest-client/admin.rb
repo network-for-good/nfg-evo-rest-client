@@ -3,7 +3,7 @@ module NfgEvoRestClient
     # can't get the value set in the initializer to populate
     # the base_url as the class is being loaded before the initializer
     # is run.
-    base_url SsoOpenid::Urls.evo.fqdn
+    base_url ::SsoOpenid::Urls.evo.fqdn
 
     verbose true
 
