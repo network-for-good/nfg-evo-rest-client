@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "nfg/evo/rest/client/version"
+require "nfg-evo-rest-client/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "nfg-evo-rest-client"
