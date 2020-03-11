@@ -5,13 +5,12 @@ require "nfg/evo/rest/client/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "nfg-evo-rest-client"
-  spec.version       = Nfg::Evo::Rest::Client::VERSION
+  spec.version       = NfgEvoRestClient::VERSION
   spec.authors       = ["Tom Hoen"]
-  spec.email         = ["tom@givecorps.com"]
+  spec.email         = ["tom.hoen@networkforgood.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Library for using the EVO/Fundraising Pages API at Network For Good}
+  spec.homepage      = "https://github.com/network-for-good/nfg-evo-rest-client.git"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -20,7 +19,7 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
+    spec.metadata["source_code_uri"] = "https://github.com/network-for-good/nfg-evo-rest-client.git"
     spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
@@ -39,4 +38,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.17"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  spec.add_dependency "activesupport", '~> 4.0'
+  spec.add_dependency "json"
+  spec.add_dependency "flexirest"
 end
