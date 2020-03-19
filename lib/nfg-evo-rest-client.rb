@@ -7,6 +7,8 @@ require "nfg-evo-rest-client/donor"
 require "nfg-evo-rest-client/entity"
 require "nfg-evo-rest-client/project"
 require "nfg-evo-rest-client/ticket_purchase"
+require "nfg-evo-rest-client/onboarding"
+require "nfg-evo-rest-client/product"
 require "nfg-evo-rest-client/questionnaires/questionnaire"
 require "nfg-evo-rest-client/questionnaires/response"
 
