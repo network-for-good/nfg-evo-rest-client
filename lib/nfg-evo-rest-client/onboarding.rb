@@ -11,7 +11,7 @@ module NfgEvoRestClient
       append_param_fields_if_any(request)
     end
 
-    post :onboarding, "/api/v1/onboarding/initial_setup"
+    post :onboarding, "/api/v1/onboarding/initial_setup", timeout: 30
 
     private
 
@@ -19,4 +19,4 @@ module NfgEvoRestClient
       []
     end
   end
-end
+endi
