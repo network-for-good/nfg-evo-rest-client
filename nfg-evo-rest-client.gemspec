@@ -43,6 +43,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec_junit_formatter'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
+  spec.add_development_dependency 'yard'
 
   spec.add_dependency 'activesupport', '~> 5.0'
   spec.add_dependency 'flexirest'
