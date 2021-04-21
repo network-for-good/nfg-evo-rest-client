@@ -12,3 +12,7 @@
 
 # rspec caching --next-failure --only-failures
 spec/examples.txt
+
+# in applications you do want to check this in, but not for gems;
+# see https://yehudakatz.com/2010/12/16/clarifying-the-roles-of-the-gemspec-and-gemfile/
+Gemfile.lock
