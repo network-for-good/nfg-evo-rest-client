@@ -1,11 +1,24 @@
+# frozen_string_literal: true
+
+require 'flexirest'
+
 module NfgEvoRestClient
+  # @abstract Subclasses define specific RESTful API endpoints
   class Base < Flexirest::Base
     include NfgEvoRestClient::Configuration
+
     request_body_type :json
 
-    base_url nfg_evo_rest_base_url
+    verbose true
 
-    private
+
+    before_request do |_name, request|
+      base_url nfg_evo_rest_base_url
+      request.get_params[:user_email] = nfg_evo_rest_user_email
+      request.get_params[:user_token] = nfg_evo_rest_user_token
+
+      append_param_fields_if_any(request)
+    end
 
     def self.append_param_fields_if_any(request)
       # for each field, see if a value has been provided when instantiating
@@ -21,11 +34,9 @@ module NfgEvoRestClient
         field, value = field_or_hash.is_a?(Symbol) ? [field_or_hash, nil] : field_or_hash.first
         if request.object.respond_to?(field) && request.object.send(field).present?
           request.get_params[field] = request.object.send(field)
-        else
-          if value
+        elsif value
           # otherwise, force the api to return no results
-            request.get_params[field] = value
-          end
+          request.get_params[field] = value
         end
       end
     end
@@ -38,6 +49,5 @@ module NfgEvoRestClient
       # i.e. [:from_date, :to_date, number_of_records: 20]
       []
     end
-
   end
 end
