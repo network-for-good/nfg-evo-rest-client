@@ -6,12 +6,24 @@ This is primarily used by DM, but could also be used by other applications that 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+To use the public repository version of this gem, add the following line to your application's Gemfile:
 
 ```ruby
 gem 'nfg-evo-rest-client', git: 'https://github.com/network-for-good/nfg-evo-rest-client.git'
 ```
 
+Because this gem is hosted on [NFG's private gem server](https://github.com/orgs/network-for-good/packages),
+you can also add this line to the application's Gemfile, if the application is configured with a 
+[Personal Access Token](https://docs.github.com/en/packages/guides/configuring-rubygems-for-use-with-github-packages#authenticating-to-github-packages))
+that allows repository read access:
+
+```ruby
+source 'https://rubygems.pkg.github.com/network-for-good' do
+  gem 'nfg-evo-rest-cache', '~> 1.0'
+end
+```
+
+2. 
 ## Configuration
 
 Three config variables need to be set:
@@ -52,17 +64,17 @@ curl -A $user_agent "https://admin.networkforgood-beta.com/api/v1/campaigns?user
 
 2. Bump and commit the version number in `lib/nfg-evo-rest-client/version.rb`.
 
-3. Tag the commit with the new version number for future reference (we may want to use this for continuous deployment in the future):
-
-```bash
-git tag -a v#.#.# -m "summarize changes here"
-```
-
-4. Run the following command:
+3. Run the following command:
 
 ```bash
 rake build
 gem push --key github --host https://rubygems.pkg.github.com/network-for-good pkg/nfg-evo-rest-client-#.#.#.gem
+```
+4. Tag the final commit with the new version number for future reference (we may want to use this for continuous deployment in the future):
+
+```bash
+git tag -a v#.#.# -m "summarize changes here"
+git push --tags # so tag shows up in Github
 ```
 
 ## Authors
