@@ -9,7 +9,6 @@ This is primarily used by DM, but could also be used by other applications that 
 Add this line to your application's Gemfile:
 
 ```ruby
-# TODO: we should eventually convert the below gem into a privately-hosted gem
 gem 'nfg-evo-rest-client', git: 'https://github.com/network-for-good/nfg-evo-rest-client.git'
 ```
 

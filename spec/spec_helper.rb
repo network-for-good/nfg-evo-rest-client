@@ -23,9 +23,6 @@ NfgEvoRestClient.nfg_evo_rest_user_token = NFG_USER_TOKEN
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  # rspec-expectations config goes here. You can use an alternate
-  # assertion/expectation library such as wrong or the stdlib/minitest
-  # assertions if you prefer.
   config.expect_with :rspec do |expectations|
     # This option will default to `true` in RSpec 4. It makes the `description`
     # and `failure_message` of custom matchers include text for helper methods
@@ -37,8 +34,6 @@ RSpec.configure do |config|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
   end
 
-  # rspec-mocks config goes here. You can use an alternate test double
-  # library (such as bogus or mocha) by changing the `mock_with` option here.
   config.mock_with :rspec do |mocks|
     # Prevents you from mocking or stubbing a method that does not exist on
     # a real object. This is generally recommended, and will default to
@@ -113,7 +108,8 @@ end
 
 require 'vcr'
 
-# CloudFront will block requests that do not look browser-originated
+# CloudFront will block requests that do not look browser-originated, like
+# the ones we are making from our live VCR test suite
 BROWSER_USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
 
 Flexirest::Base.faraday_config do |faraday|
@@ -124,7 +120,7 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "#{__dir__}/fixtures/vcr_cassettes"
   config.hook_into :webmock
- 
+
   # These two lines allow us to re-record API responses with real
   # credentials, without saving them to the cassette fixture.
   # When the matching ENV variables are not set, the default
