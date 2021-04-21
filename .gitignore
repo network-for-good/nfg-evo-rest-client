@@ -9,3 +9,6 @@
 
 # rspec failure tracking
 .rspec_status
+
+# rspec caching --next-failure --only-failures
+spec/examples.txt
