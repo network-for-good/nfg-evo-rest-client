@@ -34,12 +34,13 @@ Gem::Specification.new do |spec|
   end
 
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = %Q[lib]
+  spec.require_paths = %q[lib]
 
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'pry'
-  spec.add_development_dependency 'rake',    '~> 10.0'
+  spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rspec_junit_formatter'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'webmock'
 
