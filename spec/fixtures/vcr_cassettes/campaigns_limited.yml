@@ -1,0 +1,94 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/campaigns?id=2&limit=5&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 21 Apr 2021 17:00:13 GMT
+      Set-Cookie:
+      - AWSALB=zHrAFdyUU1AjfxHPffOg3vNlFtVH5HqjkSYGs3yIp4EvDQkdyPXnq23q0nBLVqv5aBYUgNOF3ygl7+e+y+TAJsMNaQl7GlPfI70oErHIeQRfKrQ+Kmwfk2mvwl0H;
+        Expires=Wed, 28 Apr 2021 17:00:13 GMT; Path=/
+      - AWSALBCORS=zHrAFdyUU1AjfxHPffOg3vNlFtVH5HqjkSYGs3yIp4EvDQkdyPXnq23q0nBLVqv5aBYUgNOF3ygl7+e+y+TAJsMNaQl7GlPfI70oErHIeQRfKrQ+Kmwfk2mvwl0H;
+        Expires=Wed, 28 Apr 2021 17:00:13 GMT; Path=/; SameSite=None; Secure
+      - ahoy_visit=739ed2b5-73fb-42e7-adb4-b4aa23960bcf; path=/; expires=Wed, 21 Apr
+        2021 21:00:13 GMT; secure
+      - ahoy_visitor=450119eb-1557-4360-8ae5-ef170b04e2bb; path=/; expires=Fri, 21
+        Apr 2023 17:00:13 GMT; secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 318a46ad-0fdf-4759-9c6b-0daad0c07d8f
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"b17fdece90515123d4900683bedbc716"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.068951'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.8
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.8
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c208eb85ab071bce3678151b6fd6ca37.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - IAD79-C1
+      X-Amz-Cf-Id:
+      - 28XTD6IMt-YlZUkvD0A1edjJkSSm6kTkeawqPlvyoCWcLfenXxuktA==
+    body:
+      encoding: UTF-8
+      string: '{"item_type":"CampaignCollection","entity_id":2,"entity_subdomain":"admin","projects":[{"item_type":"Project","id":2,"name":"Help
+        KIPP launch Lax Program","contact_name":"Paul Rabil","contact_phone_number":"4438507459","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/2/profile_Screen_Shot_2014-06-29_at_11.56.01_AM.png","start_date":"2011-06-10","end_date":"2011-06-28","hosted_video_url":"","project_type":"basic","status":"accepted","team_project":false,"ancestry":null,"goal_type":"total_amount_raised","goal":5500,"closed_date":null,"type":null,"public_url":"https://admin.networkforgood-beta.com/projects/2-kipp-baltimore-help-kipp-launch-lax-program","edit_url":"https://admin.networkforgood-beta.com/admin/projects/2-kipp-baltimore-help-kipp-launch-lax-program/edit","requires_designation_on_donation":null,"dms_internal_id":null},{"item_type":"Project","id":64,"name":"Robotics
+        teach science \u0026 technology","contact_name":"Mark Terranova","contact_phone_number":"410-367-0807","contact_email":null,"photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/64/profile_dsc_0127.jpg","start_date":null,"end_date":"2011-12-31","hosted_video_url":"http://www.vimeo.com/25240916","project_type":"max","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":1185,"closed_date":null,"type":null,"public_url":"https://admin.networkforgood-beta.com/projects/64-kipp-baltimore-robotics-teach-science-technology","edit_url":"https://admin.networkforgood-beta.com/admin/projects/64-kipp-baltimore-robotics-teach-science-technology/edit","requires_designation_on_donation":null,"dms_internal_id":null},{"item_type":"Project","id":5533,"name":"Provide
+        potatoes to hungry cats TEST","contact_name":"","contact_phone_number":"","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/5533/profile_McCarty-Family-edited1.jpg","start_date":"2015-06-22","end_date":"2015-12-09","hosted_video_url":"https://www.youtube.com/watch?v=O1KW3ZkLtuo","project_type":"peer_to_peer","status":"accepted","team_project":false,"ancestry":"5945","goal_type":"total_amount_raised","goal":25000,"closed_date":null,"type":null,"public_url":"https://admin.networkforgood-beta.com/projects/5533-kipp-baltimore-provide-potatoes-to-hungry-cats-test","edit_url":"https://admin.networkforgood-beta.com/admin/projects/5533-kipp-baltimore-provide-potatoes-to-hungry-cats-test/edit","requires_designation_on_donation":null,"dms_internal_id":null},{"item_type":"DonorCreatedProject","id":5719,"name":"Tom
+        Hoen''s fundraiser","contact_name":"Tom Hoen","contact_phone_number":null,"contact_email":"thoen@edgevaleinteractive.com","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/donor_created_project/photo/5719/profile_maxresdefault.jpg","start_date":"2015-06-25","end_date":"2015-12-09","hosted_video_url":null,"project_type":"personal_fundraiser","status":"pending","team_project":null,"ancestry":"5945/5533","goal_type":"total_amount_raised","goal":1000,"closed_date":null,"type":"DonorCreatedProject","public_url":"https://admin.networkforgood-beta.com/projects/5719-kipp-baltimore-tom-hoen-s-fundraiser","edit_url":"https://admin.networkforgood-beta.com/admin/projects/5719-kipp-baltimore-tom-hoen-s-fundraiser/edit","requires_designation_on_donation":null,"dms_internal_id":null},{"item_type":"DonorCreatedProject","id":5720,"name":"Tom
+        Hoen''s fundraiser","contact_name":"Tom Hoen","contact_phone_number":null,"contact_email":"thoen@edgevaleinteractive.com","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/donor_created_project/photo/5720/profile_maxresdefault.jpg","start_date":"2015-06-25","end_date":"2015-12-09","hosted_video_url":null,"project_type":"personal_fundraiser","status":"pending","team_project":null,"ancestry":"5945/5533","goal_type":"total_amount_raised","goal":1000,"closed_date":null,"type":"DonorCreatedProject","public_url":"https://admin.networkforgood-beta.com/projects/5720-kipp-baltimore-tom-hoen-s-fundraiser","edit_url":"https://admin.networkforgood-beta.com/admin/projects/5720-kipp-baltimore-tom-hoen-s-fundraiser/edit","requires_designation_on_donation":null,"dms_internal_id":null}],"events":[{"item_type":"Event","id":16,"name":"Meet
+        Mustache, the Awesome Tuxedo Cat","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2019-05-17T12:13:00.000-04:00","ends_at":"2019-08-09T14:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/16-happy-red-slider-turtles-meet-mustache-the-awesome-tuxedo-cat","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":254,"name":"MIKE
+        TEST","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2019-11-18T14:30:00.000-05:00","ends_at":"2020-03-27T10:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/254-kipp-baltimore-mike-test","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":255,"name":"TEST
+        NEW","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":null,"contact_email":null,"contact_phone":null,"starts_at":"2021-03-23T18:05:00.000-05:00","ends_at":"2021-03-24T19:05:00.000-04:00","time_zone":"EST","primary_call_to_action":null,"public_url":"https://admin.networkforgood-beta.com/events/255-kipp-baltimore-test-new","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":256,"name":"Daisy
+        Clone Event Test","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-02-01T10:20:00.000-05:00","ends_at":"2021-02-27T10:20:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/256-kipp-baltimore-daisy-clone-event-test","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":257,"name":"Daisy
+        Clone Event Test","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-02-01T10:20:00.000-05:00","ends_at":"2021-02-27T10:20:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/257-kipp-baltimore-daisy-clone-event-test","project_type":"event","dms_internal_id":null}]}'
+  recorded_at: Wed, 21 Apr 2021 17:00:13 GMT
+recorded_with: VCR 6.0.0

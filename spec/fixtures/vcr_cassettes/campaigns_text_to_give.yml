@@ -1,0 +1,99 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/campaigns?id=2&search%5Btext_to_give_allowed%5D=true&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Wed, 21 Apr 2021 17:07:37 GMT
+      Set-Cookie:
+      - AWSALB=kmygKjwpBmCGGLHSy2kavmk1HEzRO/ud3hCyhlamQ/WZrWufd5laxQkLFheSium3WrGFTI/RMAzBpgqaU1YoxJPS67OQhaZxC/Rsh7GlJtsi8N2BZsJey8GA7bCG;
+        Expires=Wed, 28 Apr 2021 17:07:37 GMT; Path=/
+      - AWSALBCORS=kmygKjwpBmCGGLHSy2kavmk1HEzRO/ud3hCyhlamQ/WZrWufd5laxQkLFheSium3WrGFTI/RMAzBpgqaU1YoxJPS67OQhaZxC/Rsh7GlJtsi8N2BZsJey8GA7bCG;
+        Expires=Wed, 28 Apr 2021 17:07:37 GMT; Path=/; SameSite=None; Secure
+      - ahoy_visit=0845c0dc-9fc3-4b5d-8b3d-01063644ffef; path=/; expires=Wed, 21 Apr
+        2021 21:07:37 GMT; secure
+      - ahoy_visitor=7efd80ad-d3d0-4db6-be03-fbcfba18522b; path=/; expires=Fri, 21
+        Apr 2023 17:07:37 GMT; secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 51458e1a-34a2-4da6-9997-aa25311a0ef8
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"6b0667c75b99ee0308f716a1b53fd892"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.138900'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.8
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.8
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1df382f2345322fac115f7931b894fdb.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - IAD79-C1
+      X-Amz-Cf-Id:
+      - dTTsrr4-abWl9wVdBBX7_hBZT_scPzi7SfcMrmy7t__EIE_WtwDJJw==
+    body:
+      encoding: UTF-8
+      string: '{"item_type":"CampaignCollection","entity_id":2,"entity_subdomain":"admin","projects":[{"item_type":"Project","id":6533,"name":"A
+        new EDGP","contact_name":"","contact_phone_number":"","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/6533/profile_beach.jpeg","start_date":"2017-09-22","end_date":"2018-02-21","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":false,"ancestry":null,"goal_type":"total_amount_raised","goal":5000,"closed_date":null,"type":null,"public_url":"https://admin.networkforgood-beta.com/projects/6533-the-casey-cares-foundation-a-new-edgp","edit_url":"https://admin.networkforgood-beta.com/admin/projects/6533-the-casey-cares-foundation-a-new-edgp/edit","requires_designation_on_donation":false,"dms_internal_id":null},{"item_type":"Project","id":8008,"name":"Farha
+        Test Campaign","contact_name":"","contact_phone_number":"","contact_email":"","photo_url":"/fallback/profile_default_project_image.png","start_date":"2021-03-12","end_date":null,"hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":false,"ancestry":null,"goal_type":"total_amount_raised","goal":5000,"closed_date":null,"type":null,"public_url":"https://admin.networkforgood-beta.com/projects/8008-kipp-baltimore-farha-test-campaign","edit_url":"https://admin.networkforgood-beta.com/admin/projects/8008-kipp-baltimore-farha-test-campaign/edit","requires_designation_on_donation":false,"dms_internal_id":null}],"events":[{"item_type":"Event","id":16,"name":"Meet
+        Mustache, the Awesome Tuxedo Cat","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2019-05-17T12:13:00.000-04:00","ends_at":"2019-08-09T14:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/16-happy-red-slider-turtles-meet-mustache-the-awesome-tuxedo-cat","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":255,"name":"TEST
+        NEW","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":null,"contact_email":null,"contact_phone":null,"starts_at":"2021-03-23T18:05:00.000-05:00","ends_at":"2021-03-24T19:05:00.000-04:00","time_zone":"EST","primary_call_to_action":null,"public_url":"https://admin.networkforgood-beta.com/events/255-kipp-baltimore-test-new","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":256,"name":"Daisy
+        Clone Event Test","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-02-01T10:20:00.000-05:00","ends_at":"2021-02-27T10:20:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/256-kipp-baltimore-daisy-clone-event-test","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":257,"name":"Daisy
+        Clone Event Test","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-02-01T10:20:00.000-05:00","ends_at":"2021-02-27T10:20:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/257-kipp-baltimore-daisy-clone-event-test","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":262,"name":"TEST
+        2/24","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-03-01T16:30:00.000-05:00","ends_at":"2021-03-01T18:00:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/262-kipp-baltimore-test-2-24","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":269,"name":"TEST
+        2/25","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-03-01T12:00:00.000-05:00","ends_at":"2021-08-01T10:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/269-kipp-baltimore-test-2-25","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":272,"name":"Daisy''s
+        Test Cloned Event","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-03-01T14:14:00.000-05:00","ends_at":"2021-03-22T14:14:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/272-kipp-baltimore-daisy-s-test-cloned-event","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":273,"name":"Daisy''s
+        Test Cloned Event 1","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-03-01T14:15:00.000-05:00","ends_at":"2023-03-01T14:15:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/273-kipp-baltimore-daisy-s-test-cloned-event-1","project_type":"event","dms_internal_id":null},{"item_type":"Event","id":274,"name":"Daisy''s
+        Test Cloned Event 1","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-03-01T14:15:00.000-05:00","ends_at":"2023-03-01T14:15:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://admin.networkforgood-beta.com/events/274-kipp-baltimore-daisy-s-test-cloned-event-1","project_type":"event","dms_internal_id":null}]}'
+  recorded_at: Wed, 21 Apr 2021 17:07:37 GMT
+recorded_with: VCR 6.0.0
