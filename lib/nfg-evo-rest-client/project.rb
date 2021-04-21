@@ -20,6 +20,6 @@ module NfgEvoRestClient
 
     PARAM_FIELDS = %i[entity_id search].freeze
 
-    private_constant PARAM_FIELDS
+    private_constant :PARAM_FIELDS
   end
 end
