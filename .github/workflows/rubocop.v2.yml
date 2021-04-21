@@ -1,0 +1,19 @@
+name: RuboCop
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.5.8
+        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - id: files
+      uses: jitterbit/get-changed-files@v1 # see https://github.com/marketplace/actions/get-all-changed-files#get-all-changed-files-as-space-delimited
+    - name: Run RuboCop
+      run: bundle exec rubocop --format github --fail-level error --display-style-guide --parallel --only-recognized-file-types -- ${{ steps.files.outputs.all }}
