@@ -4,41 +4,45 @@ Uses the Flexirest gem to provide a wrapper to the EVO/Fundraising Pages API.
 
 This is primarily used by DM, but could also be used by other applications that need access to the api.
 
-
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'nfg-evo-rest-client'
+# TODO: we should eventually convert the below gem into a privately-hosted gem
+gem 'nfg-evo-rest-client', git: 'https://github.com/network-for-good/nfg-evo-rest-client.git'
 ```
 
-And then execute:
+## Configuration
 
-    $ bundle
+Three config variables need to be set:
 
-Or install it yourself as:
+```ruby
+NfgEvoRestClient::Base.nfg_evo_rest_base_url   = APP_CONFIG["evo_api"]["base_url"]
+NfgEvoRestClient::Base.nfg_evo_rest_user_email = APP_CONFIG["evo_api"]["user_email"]
+NfgEvoRestClient::Base.nfg_evo_rest_user_token = APP_CONFIG["evo_api"]["user_token"]
+```
 
-    $ gem install nfg-evo-rest-client
+## Test Suite
 
-## Usage
+We use VCR to record live responses from the FP beta API. To re-record the specs:
 
-TODO: Write usage instructions here
+```bash
+NFG_API_URL=https://api.networkforgood*.com/api/v1/ # default value is admin.networkforgood-beta.com
+NFG_USER_EMAIL=mike@example.com                     # censored from storage by VCR
+NFG_USER_TOKEN=####################                 # censored from storage by VCR
 
-## Development
+rm spec/fixtures/vcr_cassettes/* ; rspec spec      # re-run all specs while recording fresh API responses
+```
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+## Direct Testing of FP APIs
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```bash
+user_agent='Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0'
+curl -A $user_agent "https://admin.networkforgood-beta.com/api/v1/campaigns?user_email=mike@example.com&user_token=###&entity_id=1" > campaigns.json
+```
 
-## Contributing
+## Authors
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/nfg-evo-rest-client. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Nfg::Evo::Rest::Client project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/nfg-evo-rest-client/blob/master/CODE_OF_CONDUCT.md).
+* @hoenth
+* @subelsky
