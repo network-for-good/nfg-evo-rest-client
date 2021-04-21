@@ -5,17 +5,15 @@ require 'flexirest'
 module NfgEvoRestClient
   # @abstract Subclasses define specific RESTful API endpoints
   class Base < Flexirest::Base
-    include NfgEvoRestClient::Configuration
-
     request_body_type :json
 
     verbose true
 
-
     before_request do |_name, request|
-      base_url nfg_evo_rest_base_url
-      request.get_params[:user_email] = nfg_evo_rest_user_email
-      request.get_params[:user_token] = nfg_evo_rest_user_token
+      base_url NfgEvoRestClient.nfg_evo_rest_base_url
+
+      request.get_params[:user_email] = NfgEvoRestClient.nfg_evo_rest_user_email
+      request.get_params[:user_token] = NfgEvoRestClient.nfg_evo_rest_user_token
 
       append_param_fields_if_any(request)
     end

@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'nfg-evo-rest-client/version'
-require 'nfg-evo-rest-client/configuration'
 require 'nfg-evo-rest-client/base'
 require 'nfg-evo-rest-client/admin'
 require 'nfg-evo-rest-client/campaign'
@@ -19,5 +18,7 @@ require 'nfg-evo-rest-client/questionnaires/response'
 # @see https://github.com/network-for-good/Givecorps-site/tree/develop/api
 module NfgEvoRestClient
   # General exception class for the gem
-  class Error < StandardError; end
+  Error = Class.new(StandardError)
+
+  mattr_accessor :nfg_evo_rest_base_url, :nfg_evo_rest_user_email, :nfg_evo_rest_user_token
 end

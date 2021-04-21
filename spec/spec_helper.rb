@@ -17,9 +17,9 @@ NFG_USER_EMAIL        = ENV.fetch('NFG_USER_EMAIL', 'a@example.com')
 NFG_USER_TOKEN        = ENV.fetch('NFG_USER_TOKEN', 'exampletoken')
 NFG_DEFAULT_ENTITY_ID = ENV.fetch('NFG_DEFAULT_ENTITY_ID', 2) # 'admin' entity by default
 
-NfgEvoRestClient::Base.nfg_evo_rest_base_url   = NFG_API_URL
-NfgEvoRestClient::Base.nfg_evo_rest_user_email = NFG_USER_EMAIL
-NfgEvoRestClient::Base.nfg_evo_rest_user_token = NFG_USER_TOKEN
+NfgEvoRestClient.nfg_evo_rest_base_url   = NFG_API_URL
+NfgEvoRestClient.nfg_evo_rest_user_email = NFG_USER_EMAIL
+NfgEvoRestClient.nfg_evo_rest_user_token = NFG_USER_TOKEN
 
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
