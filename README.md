@@ -41,6 +41,30 @@ user_agent='Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Fir
 curl -A $user_agent "https://admin.networkforgood-beta.com/api/v1/campaigns?user_email=mike@example.com&user_token=###&entity_id=1" > campaigns.json
 ```
 
+## Building and Releasing
+
+1. Initial setup: add your [GitHub personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) `~/.gem/credentials` like so:
+
+```yaml
+---
+:github: Bearer ########################################
+```
+
+2. Bump and commit the version number in `lib/nfg-evo-rest-client/version.rb`.
+
+3. Tag the commit with the new version number for future reference (we may want to use this for continuous deployment in the future):
+
+```bash
+git tag -a v#.#.# -m "summarize changes here"
+```
+
+4. Run the following command:
+
+```bash
+rake build
+gem push --key github --host https://rubygems.pkg.github.com/network-for-good pkg/nfg-evo-rest-client-#.#.#.gem
+```
+
 ## Authors
 
 * @hoenth
