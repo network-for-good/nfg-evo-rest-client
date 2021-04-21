@@ -32,7 +32,7 @@ jobs:
 
       - save_cache:
           name: Store bundle cache for Ruby dependencies
-          key: nfg-page-actions-bundle-v1-{{ checksum "Gemfile.lock" }}
+          key: nfg-evo-rest-client-bundle-v1-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
 
