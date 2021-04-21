@@ -16,4 +16,4 @@ jobs:
     - id: files
       uses: jitterbit/get-changed-files@v1 # see https://github.com/marketplace/actions/get-all-changed-files#get-all-changed-files-as-space-delimited
     - name: Run RuboCop
-      run: bundle exec rubocop --format github --fail-level error --display-style-guide --parallel --only-recognized-file-types -- ${{ steps.files.outputs.all }}
+      run: bundle exec rubocop --format github --fail-level error --display-style-guide --parallel --only-recognized-file-types -- ${{ steps.files.outputs.added_modified }}
