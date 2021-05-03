@@ -3,7 +3,7 @@
 require 'nfg-evo-rest-client/version'
 require 'nfg-evo-rest-client/base'
 require 'nfg-evo-rest-client/admin'
-require 'nfg-evo-rest-client/campaign'
+require 'nfg-evo-rest-client/campaign_collection'
 require 'nfg-evo-rest-client/donation'
 require 'nfg-evo-rest-client/donor'
 require 'nfg-evo-rest-client/entity'

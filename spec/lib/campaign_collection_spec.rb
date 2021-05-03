@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'campaign'
+require 'campaign_collection'
 
-RSpec.describe NfgEvoRestClient::Campaign do
+RSpec.describe NfgEvoRestClient::CampaignCollection  do
   let(:entity_id) { 2 }
   let(:search_params) { {} }
 
@@ -12,7 +12,7 @@ RSpec.describe NfgEvoRestClient::Campaign do
   end
 
   subject do
-    NfgEvoRestClient::Campaign.new(params)
+    described_class.new(params)
   end
 
   describe '#all' do

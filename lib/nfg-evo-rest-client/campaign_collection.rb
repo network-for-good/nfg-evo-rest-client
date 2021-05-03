@@ -2,7 +2,7 @@
 
 module NfgEvoRestClient
   # Provides access to FP's list of Campaigns, containing both Projects and Events
-  class Campaign < Base
+  class CampaignCollection < Base
     get :all, '/api/v1/campaigns', timeout: 60
 
     private
