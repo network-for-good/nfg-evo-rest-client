@@ -1,0 +1,163 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dev.lvh.me:3000/api/v1/events?id=2&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/; HttpOnly
+      - ahoy_visit=946ee124-9532-4765-83b3-0cc425d7a83c; path=/; expires=Thu, 13 May
+        2021 19:17:09 GMT
+      - ahoy_visitor=c44bac01-a9a4-48d6-adea-856ba02908e4; path=/; expires=Sat, 13
+        May 2023 15:17:09 GMT
+      X-Request-Id:
+      - 8a2f436e-ab97-4fd2-8233-bdec72764066
+      X-Runtime:
+      - '0.040414'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"Unauthorized"}'
+  recorded_at: Thu, 13 May 2021 15:17:09 GMT
+- request:
+    method: get
+    uri: http://dev.lvh.me:3000/api/v1/events?user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-cache
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/; HttpOnly
+      - ahoy_visit=a1f6f302-3154-4e01-9607-da8361fa9ecc; path=/; expires=Fri, 14 May
+        2021 00:27:21 GMT
+      - ahoy_visitor=23d6574c-85f2-43c7-8535-1a2b8631510f; path=/; expires=Sat, 13
+        May 2023 20:27:21 GMT
+      X-Request-Id:
+      - 221e3838-eae9-4db2-aff6-fe5b1eebb270
+      X-Runtime:
+      - '0.044690'
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"message":"Unauthorized"}'
+  recorded_at: Thu, 13 May 2021 20:27:21 GMT
+- request:
+    method: get
+    uri: http://dev.lvh.me:3000/api/v1/events?entity_id=2&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/; HttpOnly
+      - ahoy_visit=5b052de4-de54-4d9b-b328-4e9a448158e7; path=/; expires=Fri, 14 May
+        2021 00:50:22 GMT
+      - ahoy_visitor=3e0f58a3-3fda-4b6f-86a5-357260cb8f91; path=/; expires=Sat, 13
+        May 2023 20:50:22 GMT
+      X-Request-Id:
+      - 9dc334c1-6915-4272-acca-5916a55add72
+      X-Runtime:
+      - '0.125751'
+      X-Miniprofiler-Original-Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Miniprofiler-Ids:
+      - e3nwn2ww7fbmh0o7qy43,1drdgfzbolt4eawz1ljf,xe3mwldcj8yzhiv558d2,a5qdbj3kc9bww5gohay2,rgd8e1iglaetthw16pur,ywk5de8tq2mlu2uftzo0,7w0bjuioiyg65x372dc0,9hre82fmanbgwevyri72,4psw5j3o6nbetksb04cd,68iwv478buxk6o00qgxk,frhg0b2o70dw21uh2ohw,fqgo7tv9f1yxbufkw7yl,ptdfuq6exzwtcu20fa0z,6gf2gil4yd6y4xapn1au,xksivtdcxlo2idbfrjj4,ho57mji3foddmmeo2f04,ax6nt93uxsgpgsewkep,4yfpu0yrvby7wv2ajd0z,6fez3ct9nsfdv6vdtpvu,zvhyzopgjfxxppv5g5gi
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"item_type":"Event","id":3,"name":"My Fundraiser","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":null,"contact_email":null,"contact_phone":null,"starts_at":"2021-04-26T23:00:00.000-05:00","ends_at":"2021-04-28T17:13:31.000-04:00","time_zone":"EST","primary_call_to_action":null,"public_url":"http://dev.lvh.me:3000/events/3-network-for-good-dev-cause-my-fundraiser","project_type":"event","dms_internal_id":null,"accepted":true}]'
+  recorded_at: Thu, 13 May 2021 20:50:22 GMT
+recorded_with: VCR 6.0.0

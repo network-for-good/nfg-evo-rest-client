@@ -11,11 +11,21 @@ WebMock.disable_net_connect!
 
 # These values would be set when re-recording a VCR cassette; VCR would be configured to
 # replace sensitive values in the cassette data.
+#
 # @see api_test_helper.rb
 NFG_API_URL           = ENV.fetch('NFG_API_URL', 'https://api.networkforgood-beta.com')
 NFG_USER_EMAIL        = ENV.fetch('NFG_USER_EMAIL', 'a@example.com')
 NFG_USER_TOKEN        = ENV.fetch('NFG_USER_TOKEN', 'exampletoken')
 NFG_DEFAULT_ENTITY_ID = ENV.fetch('NFG_DEFAULT_ENTITY_ID', 2) # 'admin' entity by default
+
+# When developing the gem, you can override the above variables to point
+# to data in your local development environment. Do not change any saved VCR fixtures
+# however. That data must line up with existing records in the beta environment.
+#
+# export NFG_API_URL=http://dev.lvh.me:3000 
+# export NFG_USER_EMAIL=thoen@edgevaleinteractive.com
+# export NFG_USER_TOKEN=############### # value from your dev database
+# export NFG_DEFAULT_ENTITY_ID=#        # value from your dev database
 
 NfgEvoRestClient.nfg_evo_rest_base_url   = NFG_API_URL
 NfgEvoRestClient.nfg_evo_rest_user_email = NFG_USER_EMAIL
@@ -120,6 +130,11 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "#{__dir__}/fixtures/vcr_cassettes"
   config.hook_into :webmock
+
+  config.default_cassette_options = {
+    record: :once # see https://relishapp.com/vcr/vcr/v/1-8-0/docs/record-modes/once
+    # record: :all # use this setting for re-recording cassettes; see https://relishapp.com/vcr/vcr/v/1-8-0/docs/record-modes/all
+  }
 
   # These two lines allow us to re-record API responses with real
   # credentials, without saving them to the cassette fixture.

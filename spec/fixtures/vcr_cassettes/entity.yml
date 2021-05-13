@@ -27,16 +27,16 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 21 Apr 2021 17:49:01 GMT
+      - Wed, 12 May 2021 16:39:15 GMT
       Set-Cookie:
-      - AWSALB=lHldC7gjFw/sMVBtCxC3UACwE+zzzxEmjdNRk0BNQw9p+XIpv9Y43Yy6wGVvXeqCam1NTgxSusS+gamZVXgOwRMf2FS45/fCLEhDdagakbfOE8c//WSgR222EVbZ;
-        Expires=Wed, 28 Apr 2021 17:49:01 GMT; Path=/
-      - AWSALBCORS=lHldC7gjFw/sMVBtCxC3UACwE+zzzxEmjdNRk0BNQw9p+XIpv9Y43Yy6wGVvXeqCam1NTgxSusS+gamZVXgOwRMf2FS45/fCLEhDdagakbfOE8c//WSgR222EVbZ;
-        Expires=Wed, 28 Apr 2021 17:49:01 GMT; Path=/; SameSite=None; Secure
-      - ahoy_visit=23fc3a13-6223-47ec-a910-a1c5e7507f19; path=/; expires=Wed, 21 Apr
-        2021 21:49:01 GMT; secure
-      - ahoy_visitor=983c7f64-984b-4cd3-827c-da824727f1a3; path=/; expires=Fri, 21
-        Apr 2023 17:49:01 GMT; secure
+      - AWSALB=vyCeQks45XUYG/nGMCzIK+NDIzFH9QnNVl3QsF5MvMFt3Ek7chV4Gkx/9vMQhaF189Wk0HjOt8STvIVvgOySnMeoGStXV2GwY9iXf8BGiMnuK3Hs0tanRQ3+YnEC;
+        Expires=Wed, 19 May 2021 16:39:15 GMT; Path=/
+      - AWSALBCORS=vyCeQks45XUYG/nGMCzIK+NDIzFH9QnNVl3QsF5MvMFt3Ek7chV4Gkx/9vMQhaF189Wk0HjOt8STvIVvgOySnMeoGStXV2GwY9iXf8BGiMnuK3Hs0tanRQ3+YnEC;
+        Expires=Wed, 19 May 2021 16:39:15 GMT; Path=/; SameSite=None; Secure
+      - ahoy_visit=903fe345-abbf-41cd-86a5-7130744f94c9; path=/; expires=Wed, 12 May
+        2021 20:39:15 GMT; secure
+      - ahoy_visitor=00e55b54-e325-4550-8079-ce9c26f1d7aa; path=/; expires=Fri, 12
+        May 2023 16:39:15 GMT; secure
       Status:
       - 200 OK
       Cache-Control:
@@ -50,15 +50,15 @@ http_interactions:
       X-Xss-Protection:
       - 1; mode=block
       X-Request-Id:
-      - 73a3a4bb-2f58-4803-bdcd-6af07bf144cd
+      - 68352a87-1ca3-4574-a99e-24f765fd1260
       X-Download-Options:
       - noopen
       Etag:
-      - W/"bcf236ac92594d1c24fb3d822e54cf10"
+      - W/"a8d370daee218d83c21e113f5681de50"
       X-Frame-Options:
       - SAMEORIGIN
       X-Runtime:
-      - '0.082700'
+      - '0.101439'
       X-Content-Type-Options:
       - nosniff
       X-Powered-By:
@@ -68,14 +68,71 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 aae0c8231be15466b169b68f10d6a919.cloudfront.net (CloudFront)
+      - 1.1 15f09804612e4aac31f0c8eddf17791a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
       - IAD79-C1
       X-Amz-Cf-Id:
-      - oTtSXdd9vQol6JA7gb84XbGKUw5b-4ImYZHvtsEaAxjgSwgxvwjupQ==
+      - 9r9GrJs9q8M7xNg3V6CH_B_q0Th7zeI1X-dDlE9vhRBG0w9VpWukFQ==
     body:
       encoding: UTF-8
-      string: '[{"id":2,"name":"Baltimore","identifier":"admin","url":"https://admin.networkforgood-beta.com/","status":"inactive","supervisor_admin":{"id":11,"first_name":"Tom","last_name":"Hoen","email":"tom@givecorps.com","roles":["supervisor","sysadmin"]},"salesforceID":"","product_names":["premier","events","peer_to_peer","everyday_giving_page"],"ein":"52-2009393","new_admin_product_urls":{"peer_to_peer_url":"/admin/campaigns/new?product_id=257","event_url":"/admin/campaigns/new?product_id=256","edgp_url":"/admin/campaigns/new?product_id=258"},"address":{"id":74,"street_address":"2601
+      string: '[{"id":2,"name":"Baltimore","identifier":"admin","url":"https://admin.networkforgood-beta.com/","status":"inactive","supervisor_admin":{"id":11,"first_name":"Tom","last_name":"Hoen","email":"tom@givecorps.com","roles":["supervisor","sysadmin"]},"salesforceID":"","product_names":["premier","everyday_giving_page","peer_to_peer","events"],"ein":"52-2009393","new_admin_product_urls":{"peer_to_peer_url":"/admin/campaigns/new?product_id=257","event_url":"/admin/campaigns/new?product_id=256","edgp_url":"/admin/campaigns/new?product_id=258"},"address":{"id":74,"street_address":"2601
         N. Howard Street","street_address2":"Suite 130","city":"Baltimore","state":"MD","zip_code":"21218","country":"US"}}]'
-  recorded_at: Wed, 21 Apr 2021 17:49:01 GMT
+  recorded_at: Wed, 12 May 2021 16:39:15 GMT
+- request:
+    method: get
+    uri: http://dev.lvh.me:3000/api/v1/entities/2?user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - no-store, must-revalidate, private, max-age=0
+      Set-Cookie:
+      - __profilin=p%3Dt; path=/; HttpOnly
+      - ahoy_visit=beeeb756-1b06-48e9-9853-87ebb76693c7; path=/; expires=Fri, 14 May
+        2021 00:50:21 GMT
+      - ahoy_visitor=c54405e7-604e-492a-9b0c-8d0f7a2bc05d; path=/; expires=Sat, 13
+        May 2023 20:50:21 GMT
+      X-Request-Id:
+      - 41d1e176-87c1-49d0-b152-85dbd87734f9
+      X-Runtime:
+      - '1.371876'
+      X-Miniprofiler-Original-Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Miniprofiler-Ids:
+      - xe3mwldcj8yzhiv558d2,a5qdbj3kc9bww5gohay2,rgd8e1iglaetthw16pur,ywk5de8tq2mlu2uftzo0,7w0bjuioiyg65x372dc0,9hre82fmanbgwevyri72,4psw5j3o6nbetksb04cd,68iwv478buxk6o00qgxk,frhg0b2o70dw21uh2ohw,fqgo7tv9f1yxbufkw7yl,ptdfuq6exzwtcu20fa0z,6gf2gil4yd6y4xapn1au,xksivtdcxlo2idbfrjj4,ho57mji3foddmmeo2f04,ax6nt93uxsgpgsewkep,4yfpu0yrvby7wv2ajd0z,6fez3ct9nsfdv6vdtpvu,zvhyzopgjfxxppv5g5gi,pwx1zom5rl7acwk2hl2e,h319s2zgf45ssadj4uyo
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"id":2,"name":"Network For Good - Admin","identifier":"admin","url":"http://admin.lvh.me:3000/","status":"active","supervisor_admin":{"id":3,"first_name":"Supervisor","last_name":"Admin","email":"supervisor@admin.com","roles":["supervisor"]},"salesforceID":null,"product_names":["basic","events","peer_to_peer","everyday_giving_page"],"ein":"22-3102844","new_admin_product_urls":{"peer_to_peer_url":"/admin/campaigns/new?product_id=4","event_url":"/admin/campaigns/new?product_id=3","edgp_url":"/admin/campaigns/new?product_id=5"},"address":{"id":3,"street_address":"123
+        This street","street_address2":null,"city":"Baltimore","state":"MD","zip_code":"21210","country":null}}]'
+  recorded_at: Thu, 13 May 2021 20:50:21 GMT
 recorded_with: VCR 6.0.0
