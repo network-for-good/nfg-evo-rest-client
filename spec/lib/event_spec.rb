@@ -3,32 +3,34 @@
 require 'event'
 
 RSpec.describe NfgEvoRestClient::Event do
-  let(:event_id)  { 2 } # TODO: these values are local to my dev environment, need to change to beta values to allow re-recording
-  let(:entity_id) { 2 } # once we do that, we can re-record VCR cassettes with live beta data
+  let(:event_id)  { 116 } # TODO: these values correspond to beta records current as of 5/4/2021
+  let(:entity_id) { 428 }
 
   subject do
     described_class.new(entity_id: entity_id)
   end
 
-  describe '#all 'do
+  describe '#all' do
     it 'returns all Events for an Entity' do
       results = VCR.use_cassette 'all_events' do
         subject.all
       end
 
-      expect(results.size).to eq(1)
-      skip 'add more assertions when beta data available'
+      expect(results.size).to be > 1
+
+      random_event = results.find { |r| r.name == 'Liisa Celebrates PSTWO-9215' }
+      expect(random_event).not_to be_nil
     end
   end
 
   describe '#find' do
     it 'returns the correct Event' do
-      results = VCR.use_cassette 'event' do
+      result = VCR.use_cassette 'event' do
         subject.find(event_id)
       end
 
-      expect(results[:name]).to eq('Spring Gala')
-      skip 'add more assertions when beta data available'
+      expect(result[:name]).to eq('My Fine Event')
+      expect(result.public_url).to eq('https://spin.networkforgood-beta.com/events/116-my-fine-event')
     end
   end
 end

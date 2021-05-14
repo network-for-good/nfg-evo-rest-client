@@ -22,7 +22,7 @@ NFG_DEFAULT_ENTITY_ID = ENV.fetch('NFG_DEFAULT_ENTITY_ID', 2) # 'admin' entity b
 # to data in your local development environment. Do not change any saved VCR fixtures
 # however. That data must line up with existing records in the beta environment.
 #
-# export NFG_API_URL=http://dev.lvh.me:3000 
+# export NFG_API_URL=http://dev.lvh.me:3000
 # export NFG_USER_EMAIL=thoen@edgevaleinteractive.com
 # export NFG_USER_TOKEN=############### # value from your dev database
 # export NFG_DEFAULT_ENTITY_ID=#        # value from your dev database

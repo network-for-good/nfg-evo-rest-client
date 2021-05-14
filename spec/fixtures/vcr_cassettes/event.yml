@@ -2,111 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://dev.lvh.me:3000/api/v1/events?id=2&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
-      Accept:
-      - application/hal+json, application/json;q=0.5
-      Content-Type:
-      - application/json; charset=utf-8
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/; HttpOnly
-      - ahoy_visit=c07b74c2-bb00-4e8a-ba8d-a9490992a2b2; path=/; expires=Thu, 13 May
-        2021 18:56:29 GMT
-      - ahoy_visitor=af9b21c4-44cd-4589-a2fe-b19abbf8d6ea; path=/; expires=Sat, 13
-        May 2023 14:56:29 GMT
-      X-Request-Id:
-      - 6552cfd4-1c38-486f-91ce-09fd0873ffbb
-      X-Runtime:
-      - '0.042308'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"message":"Unauthorized"}'
-  recorded_at: Thu, 13 May 2021 14:56:29 GMT
-- request:
-    method: get
-    uri: http://dev.lvh.me:3000/api/v1/events/2?event_id=2&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
-      Accept:
-      - application/hal+json, application/json;q=0.5
-      Content-Type:
-      - application/json; charset=utf-8
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/; HttpOnly
-      - ahoy_visit=b27e7503-1481-4684-9786-d1f8dbd5bada; path=/; expires=Thu, 13 May
-        2021 18:57:48 GMT
-      - ahoy_visitor=985d730d-538c-4084-8a2e-0255fe04fb4d; path=/; expires=Sat, 13
-        May 2023 14:57:48 GMT
-      X-Request-Id:
-      - 906d5330-1344-4531-90d0-984d1c3ab439
-      X-Runtime:
-      - '0.035212'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"message":"Unauthorized"}'
-  recorded_at: Thu, 13 May 2021 14:57:48 GMT
-- request:
-    method: get
-    uri: http://dev.lvh.me:3000/api/v1/events/2?user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    uri: https://api.networkforgood-beta.com/api/v1/events/116?entity_id=428&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
     body:
       encoding: US-ASCII
       string: ''
@@ -124,42 +20,63 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - no-store, must-revalidate, private, max-age=0
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/; HttpOnly
-      - ahoy_visit=0c1e134c-998f-44bf-b351-5534472df5c3; path=/; expires=Fri, 14 May
-        2021 00:50:22 GMT
-      - ahoy_visitor=3c704279-5515-438f-aa62-45dd2705a903; path=/; expires=Sat, 13
-        May 2023 20:50:22 GMT
-      X-Request-Id:
-      - b759c51c-4162-4b61-bf31-e101a796cde6
-      X-Runtime:
-      - '0.411118'
-      X-Miniprofiler-Original-Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Miniprofiler-Ids:
-      - 1drdgfzbolt4eawz1ljf,xe3mwldcj8yzhiv558d2,a5qdbj3kc9bww5gohay2,rgd8e1iglaetthw16pur,ywk5de8tq2mlu2uftzo0,7w0bjuioiyg65x372dc0,9hre82fmanbgwevyri72,4psw5j3o6nbetksb04cd,68iwv478buxk6o00qgxk,frhg0b2o70dw21uh2ohw,fqgo7tv9f1yxbufkw7yl,ptdfuq6exzwtcu20fa0z,6gf2gil4yd6y4xapn1au,xksivtdcxlo2idbfrjj4,ho57mji3foddmmeo2f04,ax6nt93uxsgpgsewkep,4yfpu0yrvby7wv2ajd0z,6fez3ct9nsfdv6vdtpvu,zvhyzopgjfxxppv5g5gi,pwx1zom5rl7acwk2hl2e
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 14 May 2021 18:11:16 GMT
+      Set-Cookie:
+      - AWSALB=mDKGZGD9m5XZaPxmxX/AypANH/1+2vyZQzhiaOybKlo70Ci01e5XimHtt1HiUFPNZtowGn+sv+2pBqSncnTCp5ddi7J4He9Qr2+FSB+HROEYeO4uHt5AoVmmzVU5;
+        Expires=Fri, 21 May 2021 18:11:16 GMT; Path=/
+      - AWSALBCORS=mDKGZGD9m5XZaPxmxX/AypANH/1+2vyZQzhiaOybKlo70Ci01e5XimHtt1HiUFPNZtowGn+sv+2pBqSncnTCp5ddi7J4He9Qr2+FSB+HROEYeO4uHt5AoVmmzVU5;
+        Expires=Fri, 21 May 2021 18:11:16 GMT; Path=/; SameSite=None; Secure
+      - ahoy_visit=b27a270e-d95f-4dce-8caf-883ee45d0800; path=/; expires=Fri, 14 May
+        2021 22:11:16 GMT; secure
+      - ahoy_visitor=e252a7e9-53de-4421-a396-a9325e4fac3e; path=/; expires=Sun, 14
+        May 2023 18:11:16 GMT; secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 39c776a7-bd94-4f62-a139-eed6e520c651
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"7afee25a573824bd28348ba13dc7925d"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.090849'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.8
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.8
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 12f59ea0cc8b3c4c54373b702216110b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - IAD66-C1
+      X-Amz-Cf-Id:
+      - 7xTHDnBFfB-GR96ty6pTGaUfBRVs2vm-sURWHAb0irR7EzjmwgHm8A==
     body:
       encoding: UTF-8
-      string: '{"item_type":"Event","id":2,"name":"Spring Gala","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Meg
-        Labadie","contact_email":"nelson@torp.io","contact_phone":null,"starts_at":"2021-04-29T12:53:26.000-04:00","ends_at":"2021-04-29T15:53:26.000-04:00","time_zone":"Eastern
-        Time (US \u0026 Canada)","primary_call_to_action":null,"public_url":"http://admin.lvh.me:3000/events/2-network-for-good-admin-cause-spring-gala","project_type":"event","dms_internal_id":null,"accepted":true}'
-  recorded_at: Thu, 13 May 2021 20:50:22 GMT
+      string: '{"item_type":"Event","id":116,"name":"My Fine Event","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/116/profile_yzJi3iU.jpg","contact_name":"Mr.
+        Person Man","contact_email":"no@example.com","contact_phone":"1234567890","starts_at":"2021-04-28T18:28:00.000-04:00","ends_at":"2021-04-28T19:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Primary call to action","public_url":"https://spin.networkforgood-beta.com/events/116-my-fine-event","project_type":"event-advanced","dms_internal_id":2268,"accepted":true}'
+  recorded_at: Fri, 14 May 2021 18:11:16 GMT
 recorded_with: VCR 6.0.0

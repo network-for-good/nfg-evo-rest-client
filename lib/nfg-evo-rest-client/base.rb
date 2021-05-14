@@ -7,8 +7,6 @@ module NfgEvoRestClient
   class Base < Flexirest::Base
     request_body_type :json
 
-    verbose true
-
     before_request do |_name, request|
       base_url NfgEvoRestClient.nfg_evo_rest_base_url
 

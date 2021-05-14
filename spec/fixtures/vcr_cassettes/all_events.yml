@@ -2,111 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://dev.lvh.me:3000/api/v1/events?id=2&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
-      Accept:
-      - application/hal+json, application/json;q=0.5
-      Content-Type:
-      - application/json; charset=utf-8
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/; HttpOnly
-      - ahoy_visit=946ee124-9532-4765-83b3-0cc425d7a83c; path=/; expires=Thu, 13 May
-        2021 19:17:09 GMT
-      - ahoy_visitor=c44bac01-a9a4-48d6-adea-856ba02908e4; path=/; expires=Sat, 13
-        May 2023 15:17:09 GMT
-      X-Request-Id:
-      - 8a2f436e-ab97-4fd2-8233-bdec72764066
-      X-Runtime:
-      - '0.040414'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"message":"Unauthorized"}'
-  recorded_at: Thu, 13 May 2021 15:17:09 GMT
-- request:
-    method: get
-    uri: http://dev.lvh.me:3000/api/v1/events?user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
-      Accept:
-      - application/hal+json, application/json;q=0.5
-      Content-Type:
-      - application/json; charset=utf-8
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 401
-      message: Unauthorized
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - no-cache
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/; HttpOnly
-      - ahoy_visit=a1f6f302-3154-4e01-9607-da8361fa9ecc; path=/; expires=Fri, 14 May
-        2021 00:27:21 GMT
-      - ahoy_visitor=23d6574c-85f2-43c7-8535-1a2b8631510f; path=/; expires=Sat, 13
-        May 2023 20:27:21 GMT
-      X-Request-Id:
-      - 221e3838-eae9-4db2-aff6-fe5b1eebb270
-      X-Runtime:
-      - '0.044690'
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"message":"Unauthorized"}'
-  recorded_at: Thu, 13 May 2021 20:27:21 GMT
-- request:
-    method: get
-    uri: http://dev.lvh.me:3000/api/v1/events?entity_id=2&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    uri: https://api.networkforgood-beta.com/api/v1/events?entity_id=428&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
     body:
       encoding: US-ASCII
       string: ''
@@ -124,40 +20,260 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
       Content-Type:
       - application/json; charset=utf-8
-      Cache-Control:
-      - no-store, must-revalidate, private, max-age=0
-      Set-Cookie:
-      - __profilin=p%3Dt; path=/; HttpOnly
-      - ahoy_visit=5b052de4-de54-4d9b-b328-4e9a448158e7; path=/; expires=Fri, 14 May
-        2021 00:50:22 GMT
-      - ahoy_visitor=3e0f58a3-3fda-4b6f-86a5-357260cb8f91; path=/; expires=Sat, 13
-        May 2023 20:50:22 GMT
-      X-Request-Id:
-      - 9dc334c1-6915-4272-acca-5916a55add72
-      X-Runtime:
-      - '0.125751'
-      X-Miniprofiler-Original-Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Miniprofiler-Ids:
-      - e3nwn2ww7fbmh0o7qy43,1drdgfzbolt4eawz1ljf,xe3mwldcj8yzhiv558d2,a5qdbj3kc9bww5gohay2,rgd8e1iglaetthw16pur,ywk5de8tq2mlu2uftzo0,7w0bjuioiyg65x372dc0,9hre82fmanbgwevyri72,4psw5j3o6nbetksb04cd,68iwv478buxk6o00qgxk,frhg0b2o70dw21uh2ohw,fqgo7tv9f1yxbufkw7yl,ptdfuq6exzwtcu20fa0z,6gf2gil4yd6y4xapn1au,xksivtdcxlo2idbfrjj4,ho57mji3foddmmeo2f04,ax6nt93uxsgpgsewkep,4yfpu0yrvby7wv2ajd0z,6fez3ct9nsfdv6vdtpvu,zvhyzopgjfxxppv5g5gi
       Transfer-Encoding:
       - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 14 May 2021 18:11:17 GMT
+      Set-Cookie:
+      - AWSALB=Zo0EenqjLQ1LLbUxq+Dol3g0UOGz9Gn3pFzrpFJMQ4CnRT+dpHOukCCo1IAoLaJSgQXtrfzK3PGrzET+05cHI3Udq37L8ovMy9O6cZVJXk8/kCPT4+3Kt2n/bd11;
+        Expires=Fri, 21 May 2021 18:11:16 GMT; Path=/
+      - AWSALBCORS=Zo0EenqjLQ1LLbUxq+Dol3g0UOGz9Gn3pFzrpFJMQ4CnRT+dpHOukCCo1IAoLaJSgQXtrfzK3PGrzET+05cHI3Udq37L8ovMy9O6cZVJXk8/kCPT4+3Kt2n/bd11;
+        Expires=Fri, 21 May 2021 18:11:16 GMT; Path=/; SameSite=None; Secure
+      - ahoy_visit=3abcb710-9e14-49a7-a88c-2299ace08845; path=/; expires=Fri, 14 May
+        2021 22:11:16 GMT; secure
+      - ahoy_visitor=6f85d571-2d74-410d-b905-a67e9f3dc2a8; path=/; expires=Sun, 14
+        May 2023 18:11:16 GMT; secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - ee1a75aa-e102-4d26-805d-58a65cedf1fb
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"c5a3217f0310781cc22c269c57813dea"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.465934'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.8
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.8
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 12f59ea0cc8b3c4c54373b702216110b.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - IAD66-C1
+      X-Amz-Cf-Id:
+      - hcDlDXvFRn3eqYuGODIBmSq2TNQBWt8lW9lEJ3wfdmKGhh_sdDke8A==
     body:
       encoding: UTF-8
-      string: '[{"item_type":"Event","id":3,"name":"My Fundraiser","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":null,"contact_email":null,"contact_phone":null,"starts_at":"2021-04-26T23:00:00.000-05:00","ends_at":"2021-04-28T17:13:31.000-04:00","time_zone":"EST","primary_call_to_action":null,"public_url":"http://dev.lvh.me:3000/events/3-network-for-good-dev-cause-my-fundraiser","project_type":"event","dms_internal_id":null,"accepted":true}]'
-  recorded_at: Thu, 13 May 2021 20:50:22 GMT
+      string: '[{"item_type":"Event","id":4,"name":"Fuzz Ball","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/4/profile_HAT3.JPG","contact_name":"Suzie
+        Snowflake","contact_email":"suziesnowflake@suziesnowflake.org","contact_phone":"123-456-7890","starts_at":"2021-11-30T16:30:00.000-06:00","ends_at":"2021-12-02T00:30:00.000-05:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"Join our Event!","public_url":"https://spin.networkforgood-beta.com/events/4-fuzz-ball","project_type":"event","dms_internal_id":2233,"accepted":true},{"item_type":"Event","id":8,"name":"Fall
+        Gala","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/8/profile_Mustache_Begging.jpg","contact_name":"Suzie
+        Snowflake","contact_email":"suziesnowflake@example.net","contact_phone":"123-456-7890","starts_at":"2019-01-25T21:00:00.000-05:00","ends_at":"2019-01-26T23:30:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/8-fall-gala","project_type":"event","dms_internal_id":2255,"accepted":true},{"item_type":"Event","id":10,"name":"Meet
+        Mustache, the Tuxedo Cat","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/10/profile_Mustache_and_Carl.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2021-02-20T14:58:00.000-06:00","ends_at":"2021-04-18T01:30:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/10-meet-mustache-the-tuxedo-cat","project_type":"event","dms_internal_id":2235,"accepted":true},{"item_type":"Event","id":15,"name":"Mustache''s
+        Book Signing-update","status":"pending","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/15/profile_Mustache_and_Carl.jpg","contact_name":"Liisa
+        The Human","contact_email":"nfglnftest+49@gmail.com","contact_phone":"123-456-7890","starts_at":"2015-10-03T11:30:00.000-04:00","ends_at":"2015-10-03T14:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Mustache will be available
+        for one day to discuss his new book!","public_url":"https://spin.networkforgood-beta.com/events/15-mustache-s-book-signing-update","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":27,"name":"Winter
+        Gala 2015","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2015-10-02T14:27:00.000-04:00","ends_at":"2015-10-31T17:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/27-winter-gala-2015","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":28,"name":"Winter
+        Gala 2015","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2015-10-03T18:00:00.000-04:00","ends_at":"2015-10-03T21:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/28-winter-gala-2015","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":30,"name":"Custom
+        Amounts","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2016-01-06T10:46:00.000-05:00","ends_at":"2016-01-08T10:46:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/30-custom-amounts","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":40,"name":"Investigate
+        Event Reporting Improvements","status":"pending","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/40/profile_Mustache.jpg","contact_name":"Network
+        for Good","contact_email":"liisa.fetig@networkforgood.com","contact_phone":"8882847978","starts_at":"2019-08-05T13:00:00.000-04:00","ends_at":"2019-08-06T14:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us to celebrate our
+        organization''s Birthday!","public_url":"https://spin.networkforgood-beta.com/events/40-investigate-event-reporting-improvements","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":45,"name":"Free
+        Event Tracking","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Network
+        for Good","contact_email":"liisa.fetig@networkforgood.com","contact_phone":"8882847978","starts_at":"2016-07-09T10:41:00.000-04:00","ends_at":"2018-07-10T12:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/45-free-event-tracking","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":47,"name":"Meet
+        Mittens and Sophie","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2016-11-30T16:00:00.000-05:00","ends_at":"2016-12-01T16:00:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/47-meet-mittens-and-sophie","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":49,"name":"Event
+        Test on 7 12","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2016-07-16T16:37:00.000-04:00","ends_at":"2016-07-17T16:37:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/49-event-test-on-7-12","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":50,"name":"Mustache''s
+        Ball","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2016-08-05T09:19:00.000-04:00","ends_at":"2016-08-06T09:19:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/50-mustache-s-ball","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":55,"name":"Let''s
+        Test out Ticket Maximums!","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2016-09-16T12:25:00.000-04:00","ends_at":"2016-09-17T12:25:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/55-let-s-test-out-ticket-maximums","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":60,"name":"Liisa''s
+        Event","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Network
+        for Good","contact_email":"liisa.fetig@networkforgood.com","contact_phone":"8882847978","starts_at":"2016-11-05T11:04:00.000-04:00","ends_at":"2016-11-06T11:04:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/60-liisa-s-event","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":64,"name":"Quick","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Mandy
+        Muffin","contact_email":"liisa.fetig+mandy@gmail.com","contact_phone":"888-284-7978","starts_at":"2017-02-05T17:11:00.000-05:00","ends_at":"2017-02-14T17:11:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"ssss","public_url":"https://spin.networkforgood-beta.com/events/64-quick","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":73,"name":"Liisa
+        Test New Ticket Features","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/73/profile_Hat2.png","contact_name":"Mustache''s
+        Ball","contact_email":"","contact_phone":"","starts_at":"2018-06-01T12:46:00.000-04:00","ends_at":"2018-06-03T12:46:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/73-liisa-test-new-ticket-features","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":75,"name":"Mustache''s
+        Second Appearance  ","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/75/profile_animal-photography-animals-babies-979503.jpg","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-04-29T13:38:00.000-05:00","ends_at":"2023-07-30T14:38:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet! y","public_url":"https://spin.networkforgood-beta.com/events/75-mustache-s-second-appearance","project_type":"event","dms_internal_id":2264,"accepted":true},{"item_type":"Event","id":76,"name":"Mustache''s
+        Third Appearance","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/76/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-04-22T15:22:00.000-04:00","ends_at":"2017-04-23T15:22:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/76-mustache-s-third-appearance","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":77,"name":"Mustache''s
+        Fourth Appearance","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/77/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-04-23T15:24:00.000-04:00","ends_at":"2017-04-24T15:24:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/77-mustache-s-fourth-appearance","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":78,"name":"Test
+        Clone","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/78/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-04-29T15:30:00.000-04:00","ends_at":"2017-04-30T15:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/78-test-clone","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":79,"name":"Event
+        1","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/79/profile_Sophie_Mittens_and_Karl.png","contact_name":"Eva
+        Eventcontact","contact_email":"nfglnftest+evaeventcontact@gmail.com","contact_phone":"301-555-5555","starts_at":"2017-05-31T21:00:00.000-04:00","ends_at":"2017-05-31T23:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for this awesome
+        event.","public_url":"https://spin.networkforgood-beta.com/events/79-event-1","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":80,"name":"Event
+        2","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/80/profile_Sophie_Mittens_and_Karl.png","contact_name":"Eva
+        Eventcontact","contact_email":"nfglnftest+evaeventcontact@gmail.com","contact_phone":"301-555-5555","starts_at":"2020-01-03T21:12:00.000-05:00","ends_at":"2020-01-03T22:12:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for this awesome
+        event.","public_url":"https://spin.networkforgood-beta.com/events/80-event-2","project_type":"event","dms_internal_id":2697,"accepted":true},{"item_type":"Event","id":81,"name":"Test
+        Onboarder 2","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Eva
+        Eventcontact","contact_email":"nfglnftest+evaeventcontact@gmail.com","contact_phone":"301-555-5555","starts_at":"2017-04-30T21:30:00.000-04:00","ends_at":"2017-04-30T23:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Exampel","public_url":"https://spin.networkforgood-beta.com/events/81-test-onboarder-2","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":83,"name":"Meet
+        Mittens, the Siamese kitten","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/83/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-06-29T14:44:00.000-04:00","ends_at":"2017-09-15T14:44:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/83-meet-mittens-the-siamese-kitten","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":87,"name":"Summer
+        Spay and Neuter Extravaganza","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/87/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-05-05T10:10:00.000-04:00","ends_at":"2017-05-06T10:10:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/87-summer-spay-and-neuter-extravaganza","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":88,"name":"Spay
+        and Neuter Extravaganza","status":"pending","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/88/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-07-28T10:26:00.000-04:00","ends_at":"2017-07-29T10:26:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/88-spay-and-neuter-extravaganza","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":89,"name":"4th
+        Annual Summer Spay and Neuter Event","status":"pending","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/89/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-05-26T10:43:00.000-04:00","ends_at":"2017-05-27T10:43:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/89-4th-annual-summer-spay-and-neuter-event","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":90,"name":"Fall
+        Summer Event","status":"pending","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/90/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-05-27T11:33:00.000-04:00","ends_at":"2017-05-28T11:33:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/90-fall-summer-event","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":91,"name":"Liisa
+        Needs a New Inactive Campaign","status":"pending","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/91/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-05-05T12:17:00.000-04:00","ends_at":"2017-05-07T12:17:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/91-liisa-needs-a-new-inactive-campaign","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":99,"name":"Liisa
+        Gtes a Kittem","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"liisa","contact_email":"liisa.fetig@networkforgood.com","contact_phone":"12026271564","starts_at":"2017-05-21T14:33:00.000-04:00","ends_at":"2017-05-26T14:33:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/99-liisa-gtes-a-kittem","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":102,"name":"Tuxedo
+        Cats for Liisa","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Eva
+        Eventcontact","contact_email":"example@email.com","contact_phone":"301-555-5555","starts_at":"2017-05-20T13:30:00.000-04:00","ends_at":"2017-05-27T13:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/102-tuxedo-cats-for-liisa","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":103,"name":"Tuxedo
+        Cats for Liisa 2","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/103/profile_Example_Ticket_and_Donation_Graph.png","contact_name":"Liisa","contact_email":"example@email.com","contact_phone":"301-555-5555","starts_at":"2017-05-13T13:40:00.000-04:00","ends_at":"2017-05-30T13:40:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/103-tuxedo-cats-for-liisa-2","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":109,"name":"Liisa
+        Gets a Cat","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/109/profile_Hat.jpg","contact_name":"Liisa","contact_email":"liisa.fetig@networkforgood.com","contact_phone":"2026271564","starts_at":"2017-05-19T15:08:00.000-04:00","ends_at":"2017-05-21T15:08:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/109-liisa-gets-a-cat","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":110,"name":"Meet
+        Mustache, the Tuxedo Cat!","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/110/profile_Mustache.png","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-05-20T10:43:00.000-04:00","ends_at":"2017-05-21T10:43:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/110-meet-mustache-the-tuxedo-cat","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":111,"name":"Fall
+        Gala","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"nfglnftest+elle@gmail.com","contact_phone":"8882847978","starts_at":"2017-05-20T10:48:00.000-04:00","ends_at":"2017-05-21T10:48:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/111-fall-gala","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":113,"name":"Second
+        Annual Picnic in the Park","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/113/profile_Small_Mustache_Picture.jpg","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-05-27T17:00:00.000-04:00","ends_at":"2017-09-29T20:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/113-second-annual-picnic-in-the-park","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":115,"name":"Third
+        Annual Picnic in the Park","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/115/profile_Small_Mustache_Picture.jpg","contact_name":"","contact_email":"","contact_phone":"","starts_at":"2017-09-01T20:34:00.000-04:00","ends_at":"2017-10-19T20:34:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Join us for our first annual
+        meet and greet!","public_url":"https://spin.networkforgood-beta.com/events/115-third-annual-picnic-in-the-park","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":116,"name":"My
+        Fine Event","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/116/profile_yzJi3iU.jpg","contact_name":"Mr.
+        Person Man","contact_email":"no@example.com","contact_phone":"1234567890","starts_at":"2021-04-28T18:28:00.000-04:00","ends_at":"2021-04-28T19:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Primary call to action","public_url":"https://spin.networkforgood-beta.com/events/116-my-fine-event","project_type":"event-advanced","dms_internal_id":2268,"accepted":true},{"item_type":"Event","id":117,"name":"Clone
+        Test by Writer","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/117/profile_Mustache_Begging.jpg","contact_name":"Suzie
+        Snowflake","contact_email":"suziesnowflake@example.net","contact_phone":"123-456-7890","starts_at":"2018-06-10T11:57:00.000-04:00","ends_at":"2018-06-20T11:57:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/117-clone-test-by-writer","project_type":"event","dms_internal_id":2269,"accepted":true},{"item_type":"Event","id":118,"name":"Liisa
+        Celebrates PSTWO-9215","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig+test@gmail.com","contact_phone":"8882847978","starts_at":"2017-07-03T17:42:00.000-04:00","ends_at":"2017-07-04T17:42:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/118-liisa-celebrates-pstwo-9215","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":125,"name":"PSTWO-9218","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/125/profile_2016-10-06_13-03-42.png","contact_name":"Liisa","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2017-07-27T16:56:00.000-04:00","ends_at":"2017-08-03T16:56:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/125-pstwo-9218","project_type":"event","dms_internal_id":null,"accepted":true},{"item_type":"Event","id":128,"name":"Fall
+        Gala for 15289","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/128/profile_badger2.jpg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig+test@gmail.com","contact_phone":"8882847978","starts_at":"2017-09-23T13:10:00.000-05:00","ends_at":"2023-10-26T14:10:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/128-fall-gala-for-15289","project_type":"event","dms_internal_id":2270,"accepted":true},{"item_type":"Event","id":143,"name":"Mustache''s
+        Third Appearance","status":"incomplete","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Pavan","contact_email":"pavan.kuttagula@effone.com","contact_phone":"1234567890","starts_at":"2018-02-01T14:29:00.000-05:00","ends_at":"2018-02-03T14:29:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":null,"public_url":"https://spin.networkforgood-beta.com/events/143-mustache-s-third-appearance","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":145,"name":"PSTWO-10327","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig+test@gmail.com","contact_phone":"8882847978","starts_at":"2018-03-03T21:46:00.000-05:00","ends_at":"2018-03-04T21:46:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/145-pstwo-10327","project_type":"event","dms_internal_id":2271,"accepted":true},{"item_type":"Event","id":146,"name":"Fall
+        Gala","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/146/profile_poster_board_anoir-chafik-37957.jpg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-03-10T19:00:00.000-06:00","ends_at":"2021-03-10T22:30:00.000-05:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/146-fall-gala","project_type":"event","dms_internal_id":2556,"accepted":true},{"item_type":"Event","id":148,"name":"Test
+        Free","status":"pending","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Test","contact_email":"liisa.fetig@networkforgood.com","contact_phone":"8882847978","starts_at":"2018-04-14T12:27:00.000-04:00","ends_at":"2018-04-15T12:27:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/148-test-free","project_type":"event","dms_internal_id":2341,"accepted":false},{"item_type":"Event","id":155,"name":"My
+        Event","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Test
+        Contact","contact_email":"nfglnftest+test@gmail.com","contact_phone":"555-555-5555","starts_at":"2018-06-22T13:10:00.000-04:00","ends_at":"2018-06-22T15:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"TICKETS STILL AVAILABLE
+        AT THE DOOR","public_url":"https://spin.networkforgood-beta.com/events/155-my-event","project_type":"event","dms_internal_id":2414,"accepted":true},{"item_type":"Event","id":156,"name":"PSTWO-11607","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2018-08-04T17:01:00.000-04:00","ends_at":"2018-08-05T17:01:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/156-pstwo-11607","project_type":"event","dms_internal_id":2424,"accepted":true},{"item_type":"Event","id":157,"name":"Fall
+        Gala","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/157/profile_Wine_Glasses.jpg","contact_name":"Liisa
+        Fetig","contact_email":"help@networkforgood.com","contact_phone":"888-284-7978","starts_at":"2021-08-10T14:30:00.000-05:00","ends_at":"2021-08-10T18:00:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/157-fall-gala","project_type":"event","dms_internal_id":2622,"accepted":true},{"item_type":"Event","id":165,"name":"Annual
+        Gala","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"8882847978","starts_at":"2019-11-01T21:00:00.000-04:00","ends_at":"2019-11-01T23:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/165-annual-gala","project_type":"event","dms_internal_id":2535,"accepted":true},{"item_type":"Event","id":193,"name":"Another
+        catty event","status":"incomplete","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Jim
+        Thurby","contact_email":"jim@hturby.com","contact_phone":"410-222-3333","starts_at":"2019-01-31T21:00:00.000-05:00","ends_at":"2019-01-31T23:00:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Get them while their hot","public_url":"https://spin.networkforgood-beta.com/events/193-another-catty-event","project_type":"event","dms_internal_id":null,"accepted":false},{"item_type":"Event","id":212,"name":"Livestream
+        Event","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/212/profile_Charlotte.jpg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-05-08T16:30:00.000-05:00","ends_at":"2021-05-08T19:00:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"Call-to-Action","public_url":"https://spin.networkforgood-beta.com/events/212-livestream-event","project_type":"event-advanced","dms_internal_id":2560,"accepted":true},{"item_type":"Event","id":216,"name":"Liisa
+        Fetig","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"8882847978","starts_at":"2022-01-01T12:49:00.000-06:00","ends_at":"2024-09-01T13:08:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/216-liisa-fetig","project_type":"event","dms_internal_id":2646,"accepted":true},{"item_type":"Event","id":226,"name":"Event
+        Without Location","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2020-04-04T11:04:00.000-04:00","ends_at":"2020-04-05T11:04:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/226-event-without-location","project_type":"event","dms_internal_id":2823,"accepted":true},{"item_type":"Event","id":243,"name":"Test
+        Onboarder","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/243/profile_2021-03-04_10-19-10.jpg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-02-13T20:00:00.000-05:00","ends_at":"2021-02-13T21:30:00.000-05:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/243-test-onboarder","project_type":"event-advanced","dms_internal_id":3127,"accepted":true},{"item_type":"Event","id":244,"name":"Charlotte''s
+        Dentist Party","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig+danieltiger@gmail.com","contact_phone":"8882847978","starts_at":"2021-04-05T12:30:00.000-04:00","ends_at":"2021-04-05T14:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/244-charlotte-s-dentist-party","project_type":"event","dms_internal_id":2978,"accepted":true},{"item_type":"Event","id":245,"name":"Timezoney
+        Event","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-02-22T15:30:00.000-06:00","ends_at":"2021-02-22T17:08:00.000-05:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/245-timezoney-event","project_type":"event","dms_internal_id":2989,"accepted":true},{"item_type":"Event","id":246,"name":"Test
+        Timezone again","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@Gmail.com","contact_phone":"888-284-7978","starts_at":"2021-02-18T16:29:00.000-06:00","ends_at":"2021-02-18T20:00:00.000-05:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/246-test-timezone-again","project_type":"event","dms_internal_id":2990,"accepted":true},{"item_type":"Event","id":250,"name":"Midnight","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-02-26T19:00:00.000-06:00","ends_at":"2021-02-27T01:00:00.000-05:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/250-midnight","project_type":"event","dms_internal_id":2994,"accepted":true},{"item_type":"Event","id":259,"name":"Liisa''s
+        Birthday","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-03-23T14:43:00.000-04:00","ends_at":"2021-03-23T17:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/259-liisa-s-birthday","project_type":"event-advanced","dms_internal_id":3037,"accepted":true},{"item_type":"Event","id":260,"name":"Charlotte''s
+        Birthday","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/260/profile_Charlotte_2.jpg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-06-14T14:53:00.000-04:00","ends_at":"2021-06-14T23:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/260-charlotte-s-birthday","project_type":"event-advanced","dms_internal_id":3038,"accepted":true},{"item_type":"Event","id":279,"name":"Livestream
+        Test","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@Gmail.com","contact_phone":"888-284-7978","starts_at":"2021-03-12T17:25:00.000-06:00","ends_at":"2021-03-13T18:25:00.000-05:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/279-livestream-test","project_type":"event-advanced","dms_internal_id":3087,"accepted":true},{"item_type":"Event","id":280,"name":"AJ
+        Test","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-04-30T15:00:00.000-04:00","ends_at":"2021-04-30T18:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/280-aj-test","project_type":"event-advanced","dms_internal_id":3130,"accepted":true},{"item_type":"Event","id":283,"name":"PSTWO-16417","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/283/profile_Charlotte.jpg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-04-17T01:00:00.000-04:00","ends_at":"2021-04-17T03:30:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"Wonderful PCTA","public_url":"https://spin.networkforgood-beta.com/events/283-pstwo-16417","project_type":"event-advanced","dms_internal_id":3137,"accepted":true},{"item_type":"Event","id":284,"name":"Jeremy
+        Likes The Internet","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/284/profile_Fund_the_Fish_Event.jpeg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-04-03T17:30:00.000-05:00","ends_at":"2021-04-03T21:00:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/284-jeremy-likes-the-internet","project_type":"event-advanced","dms_internal_id":3138,"accepted":true},{"item_type":"Event","id":285,"name":"April
+        Livestream Event","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/285/profile_Fund_the_Fish_Event.jpeg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-04-10T15:00:00.000-05:00","ends_at":"2021-04-10T21:00:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/285-april-livestream-event","project_type":"event-advanced","dms_internal_id":3140,"accepted":true},{"item_type":"Event","id":286,"name":"Livestream
+        for Product Party","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/286/profile_Fund_the_Fish_Event.jpeg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-04-09T11:00:00.000-04:00","ends_at":"2021-04-09T12:00:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/286-livestream-for-product-party","project_type":"event-advanced","dms_internal_id":3143,"accepted":true},{"item_type":"Event","id":287,"name":"Livestream
+        Event 3","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/287/profile_Fund_the_Fish_Event.jpeg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-04-17T14:30:00.000-05:00","ends_at":"2021-04-17T17:00:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/287-livestream-event-3","project_type":"event-advanced","dms_internal_id":3147,"accepted":true},{"item_type":"Event","id":288,"name":"Andrew''s
+        live event","status":"accepted","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Andrew
+        Porterfield","contact_email":"ajporterfield@gmail.com","contact_phone":"7656619556","starts_at":"2021-04-22T12:01:00.000-05:00","ends_at":"2021-04-25T13:01:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/288-andrew-s-live-event","project_type":"event-advanced","dms_internal_id":3150,"accepted":true},{"item_type":"Event","id":289,"name":"Daisy''s
+        Test Live Event","status":"accepted","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/event/photo/289/profile_Charlotte.jpg","contact_name":"Liisa
+        Fetig","contact_email":"liisa.fetig@gmail.com","contact_phone":"888-284-7978","starts_at":"2021-04-29T17:15:00.000-05:00","ends_at":"2021-05-31T18:15:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"Call-to-Action","public_url":"https://spin.networkforgood-beta.com/events/289-daisy-s-test-live-event","project_type":"event-advanced","dms_internal_id":3152,"accepted":true},{"item_type":"Event","id":290,"name":"Test","status":"incomplete","photo_url":"/fallback/profile_default_project_image.png","contact_name":"Test
+        Test","contact_email":"test@test.test","contact_phone":"1234567890","starts_at":"2021-05-22T21:30:00.000-05:00","ends_at":"2021-05-23T00:30:00.000-04:00","time_zone":"Central
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin.networkforgood-beta.com/events/290-test","project_type":"event-advanced","dms_internal_id":null,"accepted":false}]'
+  recorded_at: Fri, 14 May 2021 18:11:16 GMT
 recorded_with: VCR 6.0.0

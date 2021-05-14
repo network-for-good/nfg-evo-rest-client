@@ -10,14 +10,11 @@ module NfgEvoRestClient
     get :all, '/api/v1/events', timeout: 60
     get :find, '/api/v1/events/:id'
 
-    private
-
-    def param_fields
-      PARAM_FIELDS
+    before_request do |_name, request|
+      # HACK: I could not get the append_param_fields_if_any method in the Base
+      # class to work w/ entity_id. The following code does work. I would
+      # like to revisit in a future refactoring pass.
+      request.get_params[:entity_id] = request.object.entity_id
     end
-
-    PARAM_FIELDS = %i[entity_id].freeze
-
-    private_constant :PARAM_FIELDS
   end
 end

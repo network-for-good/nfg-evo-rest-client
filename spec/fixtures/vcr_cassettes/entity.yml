@@ -2,84 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.networkforgood-beta.com/api/v1/entities/2?user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
-      Accept:
-      - application/hal+json, application/json;q=0.5
-      Content-Type:
-      - application/json; charset=utf-8
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Transfer-Encoding:
-      - chunked
-      Connection:
-      - keep-alive
-      Date:
-      - Wed, 12 May 2021 16:39:15 GMT
-      Set-Cookie:
-      - AWSALB=vyCeQks45XUYG/nGMCzIK+NDIzFH9QnNVl3QsF5MvMFt3Ek7chV4Gkx/9vMQhaF189Wk0HjOt8STvIVvgOySnMeoGStXV2GwY9iXf8BGiMnuK3Hs0tanRQ3+YnEC;
-        Expires=Wed, 19 May 2021 16:39:15 GMT; Path=/
-      - AWSALBCORS=vyCeQks45XUYG/nGMCzIK+NDIzFH9QnNVl3QsF5MvMFt3Ek7chV4Gkx/9vMQhaF189Wk0HjOt8STvIVvgOySnMeoGStXV2GwY9iXf8BGiMnuK3Hs0tanRQ3+YnEC;
-        Expires=Wed, 19 May 2021 16:39:15 GMT; Path=/; SameSite=None; Secure
-      - ahoy_visit=903fe345-abbf-41cd-86a5-7130744f94c9; path=/; expires=Wed, 12 May
-        2021 20:39:15 GMT; secure
-      - ahoy_visitor=00e55b54-e325-4550-8079-ce9c26f1d7aa; path=/; expires=Fri, 12
-        May 2023 16:39:15 GMT; secure
-      Status:
-      - 200 OK
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      X-Xss-Protection:
-      - 1; mode=block
-      X-Request-Id:
-      - 68352a87-1ca3-4574-a99e-24f765fd1260
-      X-Download-Options:
-      - noopen
-      Etag:
-      - W/"a8d370daee218d83c21e113f5681de50"
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Runtime:
-      - '0.101439'
-      X-Content-Type-Options:
-      - nosniff
-      X-Powered-By:
-      - Phusion Passenger(R) 6.0.8
-      Server:
-      - nginx/1.18.0 + Phusion Passenger(R) 6.0.8
-      X-Cache:
-      - Miss from cloudfront
-      Via:
-      - 1.1 15f09804612e4aac31f0c8eddf17791a.cloudfront.net (CloudFront)
-      X-Amz-Cf-Pop:
-      - IAD79-C1
-      X-Amz-Cf-Id:
-      - 9r9GrJs9q8M7xNg3V6CH_B_q0Th7zeI1X-dDlE9vhRBG0w9VpWukFQ==
-    body:
-      encoding: UTF-8
-      string: '[{"id":2,"name":"Baltimore","identifier":"admin","url":"https://admin.networkforgood-beta.com/","status":"inactive","supervisor_admin":{"id":11,"first_name":"Tom","last_name":"Hoen","email":"tom@givecorps.com","roles":["supervisor","sysadmin"]},"salesforceID":"","product_names":["premier","everyday_giving_page","peer_to_peer","events"],"ein":"52-2009393","new_admin_product_urls":{"peer_to_peer_url":"/admin/campaigns/new?product_id=257","event_url":"/admin/campaigns/new?product_id=256","edgp_url":"/admin/campaigns/new?product_id=258"},"address":{"id":74,"street_address":"2601
-        N. Howard Street","street_address2":"Suite 130","city":"Baltimore","state":"MD","zip_code":"21218","country":"US"}}]'
-  recorded_at: Wed, 12 May 2021 16:39:15 GMT
-- request:
-    method: get
     uri: http://dev.lvh.me:3000/api/v1/entities/2?user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
     body:
       encoding: US-ASCII
@@ -135,4 +57,82 @@ http_interactions:
       string: '[{"id":2,"name":"Network For Good - Admin","identifier":"admin","url":"http://admin.lvh.me:3000/","status":"active","supervisor_admin":{"id":3,"first_name":"Supervisor","last_name":"Admin","email":"supervisor@admin.com","roles":["supervisor"]},"salesforceID":null,"product_names":["basic","events","peer_to_peer","everyday_giving_page"],"ein":"22-3102844","new_admin_product_urls":{"peer_to_peer_url":"/admin/campaigns/new?product_id=4","event_url":"/admin/campaigns/new?product_id=3","edgp_url":"/admin/campaigns/new?product_id=5"},"address":{"id":3,"street_address":"123
         This street","street_address2":null,"city":"Baltimore","state":"MD","zip_code":"21210","country":null}}]'
   recorded_at: Thu, 13 May 2021 20:50:21 GMT
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/entities/2?user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 14 May 2021 17:02:35 GMT
+      Set-Cookie:
+      - AWSALB=CwVEPQgZ0x/6zF7kW0+85+kjje4tvsn1jUjpVuoxFf93CESyUpVg5Kily2TnMV9mVctLZbmfOx2yCD85hMIpB8AQLCq9KyV+NCiH17XxzxQi7SwqJL6v2iU8fRb4;
+        Expires=Fri, 21 May 2021 17:02:34 GMT; Path=/
+      - AWSALBCORS=CwVEPQgZ0x/6zF7kW0+85+kjje4tvsn1jUjpVuoxFf93CESyUpVg5Kily2TnMV9mVctLZbmfOx2yCD85hMIpB8AQLCq9KyV+NCiH17XxzxQi7SwqJL6v2iU8fRb4;
+        Expires=Fri, 21 May 2021 17:02:34 GMT; Path=/; SameSite=None; Secure
+      - ahoy_visit=c6f4e6f6-a802-4084-a6e8-6366decf77b2; path=/; expires=Fri, 14 May
+        2021 21:02:34 GMT; secure
+      - ahoy_visitor=56e8a01e-6be0-46f4-a16e-d949cfbc730c; path=/; expires=Sun, 14
+        May 2023 17:02:34 GMT; secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - e17dfccf-ba32-40b5-a287-c238f3cec2ed
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"a8d370daee218d83c21e113f5681de50"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.067029'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R) 6.0.8
+      Server:
+      - nginx/1.18.0 + Phusion Passenger(R) 6.0.8
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 6f35734da951dcb591462352ba037615.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - IAD66-C1
+      X-Amz-Cf-Id:
+      - m8KoMBFDwZqEUxDsjLDMTUBmT17Xo_IeI79doF88M_exGagWt2mDRQ==
+    body:
+      encoding: UTF-8
+      string: '[{"id":2,"name":"Baltimore","identifier":"admin","url":"https://admin.networkforgood-beta.com/","status":"inactive","supervisor_admin":{"id":11,"first_name":"Tom","last_name":"Hoen","email":"tom@givecorps.com","roles":["supervisor","sysadmin"]},"salesforceID":"","product_names":["premier","everyday_giving_page","peer_to_peer","events"],"ein":"52-2009393","new_admin_product_urls":{"peer_to_peer_url":"/admin/campaigns/new?product_id=257","event_url":"/admin/campaigns/new?product_id=256","edgp_url":"/admin/campaigns/new?product_id=258"},"address":{"id":74,"street_address":"2601
+        N. Howard Street","street_address2":"Suite 130","city":"Baltimore","state":"MD","zip_code":"21218","country":"US"}}]'
+  recorded_at: Fri, 14 May 2021 17:02:34 GMT
 recorded_with: VCR 6.0.0
