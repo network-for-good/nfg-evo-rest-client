@@ -18,4 +18,4 @@ jobs:
       continue-on-error: true
     - name: Run RuboCop
       run: bundle exec rubocop --format github --fail-level error --display-style-guide --parallel --only-recognized-file-types -- ${{ steps.files.outputs.added_modified }}
-      if: ${{ steps.files.conclusion == 'success' && steps.files.outputs }}
+      if: ${{ steps.files.conclusion == 'success' && steps.files.outputs.added_modified != '' }}
