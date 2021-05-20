@@ -15,5 +15,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - id: files
       uses: jitterbit/get-changed-files@v1 # see https://github.com/marketplace/actions/get-all-changed-files#get-all-changed-files-as-space-delimited
+      continue-on-error: true
     - name: Run RuboCop
       run: bundle exec rubocop --format github --fail-level error --display-style-guide --parallel --only-recognized-file-types -- ${{ steps.files.outputs.added_modified }}
+      if: ${{ steps.files.conclusion == 'success' }}
