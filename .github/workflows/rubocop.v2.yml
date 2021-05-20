@@ -8,14 +8,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Check for Changed Files
+      id: files
+      uses: jitterbit/get-changed-files@v1 # see https://github.com/marketplace/actions/get-all-changed-files#get-all-changed-files-as-space-delimited
+      continue-on-error: true
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.5.8
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - id: files
-      uses: jitterbit/get-changed-files@v1 # see https://github.com/marketplace/actions/get-all-changed-files#get-all-changed-files-as-space-delimited
-      continue-on-error: true
+      if: ${{ steps.files.conclusion == 'success' && steps.files.outputs.added_modified != '' }}
     - name: Run RuboCop
       run: bundle exec rubocop --format github --fail-level error --display-style-guide --parallel --only-recognized-file-types -- ${{ steps.files.outputs.added_modified }}
       if: ${{ steps.files.conclusion == 'success' && steps.files.outputs.added_modified != '' }}
