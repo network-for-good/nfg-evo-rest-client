@@ -1,6 +1,6 @@
 module NfgEvoRestClient
   class Product < Base
-    get :all, "/api/v1/products/"
+    get :all, '/api/v1/products/'
 
     private
 
