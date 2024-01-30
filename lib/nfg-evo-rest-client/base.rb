@@ -10,8 +10,15 @@ module NfgEvoRestClient
     before_request do |_name, request|
       base_url NfgEvoRestClient.nfg_evo_rest_base_url
 
-      request.get_params[:user_email] = NfgEvoRestClient.nfg_evo_rest_user_email
-      request.get_params[:user_token] = NfgEvoRestClient.nfg_evo_rest_user_token
+      # if a bearer token is set, use it instead of the user_email and user_token
+      # We should always be using the bearer token. We are keeping the user_email
+      # and user_token for backwards compatibility.
+      if NfgEvoRestClient.nfg_evo_rest_bearer_token.present?
+        request.headers['Authorization'] = "Bearer #{NfgEvoRestClient.nfg_evo_rest_bearer_token}"
+      else
+        request.get_params[:user_email] = NfgEvoRestClient.nfg_evo_rest_user_email
+        request.get_params[:user_token] = NfgEvoRestClient.nfg_evo_rest_user_token
+      end
 
       append_param_fields_if_any(request)
     end

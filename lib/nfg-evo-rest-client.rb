@@ -22,6 +22,6 @@ module NfgEvoRestClient
   # General exception class for the gem
   Error = Class.new(StandardError)
 
-  mattr_accessor :nfg_evo_rest_base_url, :nfg_evo_rest_user_email, :nfg_evo_rest_user_token
+  mattr_accessor :nfg_evo_rest_base_url, :nfg_evo_rest_user_email, :nfg_evo_rest_user_token, :nfg_evo_rest_bearer_token
 end
 # rubocop:enable Naming/FileName
