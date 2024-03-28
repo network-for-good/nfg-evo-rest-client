@@ -33,7 +33,8 @@ module NfgEvoRestClient
       # You can set the request objects values by passing in a hash of
       # values when instantiating the object.
       # i.e. NfgEvoRestClient::Donation.new(from_date_time: "2016-02-01", to_date_time: "2016-02-29")
-      param_fields.each do |field_or_hash|
+      fields = request.object.respond_to?(:param_fields) ? request.object.param_fields : param_fields
+      fields.each do |field_or_hash|
         field, value = field_or_hash.is_a?(Symbol) ? [field_or_hash, nil] : field_or_hash.first
         if request.object.respond_to?(field) && request.object.send(field).present?
           request.get_params[field] = request.object.send(field)
