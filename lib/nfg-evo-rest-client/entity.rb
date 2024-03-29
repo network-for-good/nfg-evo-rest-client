@@ -8,8 +8,6 @@ module NfgEvoRestClient
     post :deactivate, '/api/v1/entities/:id/deactivate', timeout: 60
     post :reactivate, '/api/v1/entities/:id/reactivate', timeout: 60
 
-    private
-
     def param_fields
       []
     end

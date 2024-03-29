@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module NfgEvoRestClient
   class Donor < Base
     post :reconcile, "/api/v1/donors/reconcile", timeout: 60

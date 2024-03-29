@@ -1,0 +1,223 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/projects/116?entity_id=68&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 29 Mar 2024 09:10:07 GMT
+      Set-Cookie:
+      - AWSALB=JV+akdP9bZswx+jiXCRY5fLbZLTr7lEwHRZGtqQUCumiMpJNX6TyUPylHacB0Xo872DnBzCl8AXnyqFAQl5igHj5a7X7arvlRnfQOoMMSaAHsRmwFWshe3/XJw7G;
+        Expires=Fri, 05 Apr 2024 09:10:07 GMT; Path=/
+      - AWSALBCORS=JV+akdP9bZswx+jiXCRY5fLbZLTr7lEwHRZGtqQUCumiMpJNX6TyUPylHacB0Xo872DnBzCl8AXnyqFAQl5igHj5a7X7arvlRnfQOoMMSaAHsRmwFWshe3/XJw7G;
+        Expires=Fri, 05 Apr 2024 09:10:07 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 401 Unauthorized
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 1afbc658-ce55-411d-9447-e7abc1e7bf1e
+      X-Download-Options:
+      - noopen
+      X-Runtime:
+      - '0.029886'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 5fd865e604cad30b24a805ca3b6d4048.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MRS52-P2
+      X-Amz-Cf-Id:
+      - pRADd7JhL1D4qlUDNakUzoR-Gpp7x-W1UiFnfV3YWsPqptcqIFzn1g==
+    body:
+      encoding: UTF-8
+      string: '{"message":"Unauthorized"}'
+  recorded_at: Fri, 29 Mar 2024 09:10:07 GMT
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/projects/116?entity_id=428
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOiJldm8ifQ.l8dpuI91zxIO0fJm5S2xUDGzUKO2CDHNyXD4cfSj-J0
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 29 Mar 2024 09:25:28 GMT
+      Set-Cookie:
+      - AWSALB=CJ4H+lC0TxmjmZew5CJpI42DtyHWr3KvF0o0PP37K6eqJflGOgLBs2Wjm1qEbs7RpcFwEFBNn3Q8wg0pWyjRZlIF+Q1BxrYYZ75QWFxx2RsbHa/cZAjoPfkR5guN;
+        Expires=Fri, 05 Apr 2024 09:25:28 GMT; Path=/
+      - AWSALBCORS=CJ4H+lC0TxmjmZew5CJpI42DtyHWr3KvF0o0PP37K6eqJflGOgLBs2Wjm1qEbs7RpcFwEFBNn3Q8wg0pWyjRZlIF+Q1BxrYYZ75QWFxx2RsbHa/cZAjoPfkR5guN;
+        Expires=Fri, 05 Apr 2024 09:25:28 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 404 Not Found
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - db674b3a-ab00-4685-8eb3-0521d9d93e04
+      X-Download-Options:
+      - noopen
+      X-Runtime:
+      - '0.039834'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 d0945be30f5a4a7ae05683911a5fea2c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MRS52-P2
+      X-Amz-Cf-Id:
+      - F7GjxUNI50Bpq5S5KVAzAqMryX8WxTUlC7xoF5WKjgtOZY-_NiHJpg==
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Fri, 29 Mar 2024 09:25:28 GMT
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/projects/1403?entity_id=68
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOiJldm8ifQ.l8dpuI91zxIO0fJm5S2xUDGzUKO2CDHNyXD4cfSj-J0
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 29 Mar 2024 09:31:54 GMT
+      Set-Cookie:
+      - AWSALB=+BPq21k7/X5A0Gv9YP57S3WmgQdvDcLFCNtv5HZYI9njGtDWmo1MOItMNe9GFnEbW0lMjAguVwC4kDzoyAbRwE+264tYfJv2nvijBiIXF009IVrh2pe0NP3x0WHm;
+        Expires=Fri, 05 Apr 2024 09:31:54 GMT; Path=/
+      - AWSALBCORS=+BPq21k7/X5A0Gv9YP57S3WmgQdvDcLFCNtv5HZYI9njGtDWmo1MOItMNe9GFnEbW0lMjAguVwC4kDzoyAbRwE+264tYfJv2nvijBiIXF009IVrh2pe0NP3x0WHm;
+        Expires=Fri, 05 Apr 2024 09:31:54 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 30c50b42-70ae-484a-aa68-763c6a1a438b
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"3c7533a284ee49b712ac8e4a07781128"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.039702'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 84ca4da5a7ceb4bccfe9632e4992597c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MRS52-P2
+      X-Amz-Cf-Id:
+      - eIjWM3vfQy5kEFm1tdKXorXxDYoNmPi1xoruYA5RUxCqOGg9B8nBTg==
+    body:
+      encoding: UTF-8
+      string: '{"item_type":"Project","id":1403,"name":"Support SUNNY FUTURES and
+        Healthy Babies!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1403/profile_healthy_start_2.jpg","start_date":"2013-04-24","end_date":"2013-09-30","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":15000,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1403-community-based-initiatives-support-sunny-futures-and-healthy-babies","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1403-community-based-initiatives-support-sunny-futures-and-healthy-babies/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null}'
+  recorded_at: Fri, 29 Mar 2024 09:31:54 GMT
+recorded_with: VCR 6.2.0

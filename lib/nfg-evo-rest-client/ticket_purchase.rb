@@ -2,10 +2,8 @@
 
 module NfgEvoRestClient
   class TicketPurchase < Base
-    get :all, '/api/v1/ticket_purchases'
-    get :find, '/api/v1/ticket_purchases/:id'
-
-    private
+    get :all, "/api/v1/ticket_purchases"
+    get :find, "/api/v1/ticket_purchases/:id"
 
     def param_fields
       PARAM_FIELDS

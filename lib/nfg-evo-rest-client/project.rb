@@ -12,8 +12,6 @@ module NfgEvoRestClient
     get :all, '/api/v1/projects', timeout: 60
     get :find, '/api/v1/projects/:id'
 
-    private
-
     def param_fields
       PARAM_FIELDS
     end

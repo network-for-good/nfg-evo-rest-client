@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/projects?entity_id=68&project_type=everyday
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOiJldm8ifQ.l8dpuI91zxIO0fJm5S2xUDGzUKO2CDHNyXD4cfSj-J0
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 29 Mar 2024 09:44:19 GMT
+      Set-Cookie:
+      - AWSALB=sDimlTS8TlNiXj+uO30oFPX8UeViku9edf8IqbZCGAVDTTJmCWXwcNPNyvJ//M0hWgvDh099I/LKtuHo5XLKmfGGtbIX1ccoVpP7Zi7J6zpJT2cl+tA8X51/GNXv;
+        Expires=Fri, 05 Apr 2024 09:44:19 GMT; Path=/
+      - AWSALBCORS=sDimlTS8TlNiXj+uO30oFPX8UeViku9edf8IqbZCGAVDTTJmCWXwcNPNyvJ//M0hWgvDh099I/LKtuHo5XLKmfGGtbIX1ccoVpP7Zi7J6zpJT2cl+tA8X51/GNXv;
+        Expires=Fri, 05 Apr 2024 09:44:19 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 814fec3a-a7be-4b4c-9067-da4964424437
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"2f060a594fb3fcec8fc501b9d7553b2e"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.063062'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2f60289312992373b517623785f072a2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MRS52-P2
+      X-Amz-Cf-Id:
+      - Mp2luYWVu4FB6Kh6pQQqLQHAD95-BfE_EAaSDtnNBl5Qj-03InsVqA==
+    body:
+      encoding: UTF-8
+      string: '[{"item_type":"Project","id":1408,"name":"Support
+        Early Head Starts in Houston!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1408/profile_head_start.jpg","start_date":null,"end_date":null,"hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":0,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1408-choices-in-education-support-early-head-starts-in-houston","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1408-choices-in-education-support-early-head-starts-in-houston/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1406,"name":"Welcome
+        New Neighbors in Houston!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1406/profile_new_neighbors.jpg","start_date":"2013-04-24","end_date":"2013-07-31","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":10000,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1406-immigration-citizenship-assistance-welcome-new-neighbors-in-houston","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1406-immigration-citizenship-assistance-welcome-new-neighbors-in-houston/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null}]'
+  recorded_at: Fri, 29 Mar 2024 09:44:19 GMT
+recorded_with: VCR 6.2.0

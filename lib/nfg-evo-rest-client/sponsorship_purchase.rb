@@ -5,8 +5,6 @@ module NfgEvoRestClient
     get :all, '/api/v1/sponsorship_purchases'
     get :find, '/api/v1/sponsorship_purchases/:id'
 
-    private
-
     def param_fields
       PARAM_FIELDS
     end

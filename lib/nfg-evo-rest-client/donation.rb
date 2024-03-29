@@ -14,8 +14,6 @@ module NfgEvoRestClient
     post  :edited_by_admin, "/api/v1/donations/:id/edited_by_admin",  timeout: 60
     post  :remove,          "/api/v1/donations/delete",               timeout: 60
 
-    private
-
     def param_fields
       [{entity_id: 0}, :from_date_time, :to_date_time]
     end
