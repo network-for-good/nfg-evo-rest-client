@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/ticket_purchases?entity_id=501&from_date_time=2017-09-26T17:00:00%2B00:00&to_date_time=2017-09-26T18:00:00%2B00:00
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJhcHBfaWQiOiJldm8ifQ.l8dpuI91zxIO0fJm5S2xUDGzUKO2CDHNyXD4cfSj-J0
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Fri, 29 Mar 2024 10:12:43 GMT
+      Set-Cookie:
+      - AWSALB=GMwnOAjIM8Smin+/w/bardhYkIrVMr/0cqxvpOg9UEpe9EzOv3WsgRDpci4Ov/GH9ne86LcbWBJ1q82fdCKEFn1//3gL5xmojvDIh6fWpe1eOCtJVdka/+1phgQg;
+        Expires=Fri, 05 Apr 2024 10:12:43 GMT; Path=/
+      - AWSALBCORS=GMwnOAjIM8Smin+/w/bardhYkIrVMr/0cqxvpOg9UEpe9EzOv3WsgRDpci4Ov/GH9ne86LcbWBJ1q82fdCKEFn1//3gL5xmojvDIh6fWpe1eOCtJVdka/+1phgQg;
+        Expires=Fri, 05 Apr 2024 10:12:43 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 61b7d22f-8916-4aa9-98bb-5df1de5e1ad2
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"8da354abb624151de615af79139e0976"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.122120'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 c5e5a9ddc16b995cc90319b13f316f58.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MRS52-P2
+      X-Amz-Cf-Id:
+      - fzg6gl26rckW0k_HgVFP89FZ3cRdFFlPNsDOpwuJmr8kS5KDyFes2A==
+    body:
+      encoding: UTF-8
+      string: '[{"item_type":"OrderItem","id":7048,"status":"complete","payment_type":"credit_card","purchased_at":"2017-09-26T13:22:40.000-04:00","updated_at":"2017-09-26T13:22:40.000-04:00","entity_id":501,"entity_subdomain":"spin4","description":"Mustache!
+        Ticket w FMV at $10","total_add_fee":"0.0","total_deduct_fee":"0.0","quantity":1,"price":"10.0","discount_amount":null,"ticket_type":{"item_type":"TicketType","id":345,"name":"Ticket
+        w FMV","event_id":106,"details":"","price":"10.0","fair_market_value":"10.0","total_available":null,"amount_sold":1,"available_from":null,"available_to":null,"updated_at":"2017-09-26T13:22:44.000-04:00","collect_guest_info":false,"dms_internal_id":null},"donor":{"id":5057,"first_name":"Liisa","last_name":"Fetig","email":"liisa.fetig@gmail.com","street_address":"1140
+        Connecticut Ave NW, Ste 700","street_address2":"Ste 700","city":"Washington","state":"DC","zip_code":"20036","country":"US","phone_number":"","phone_number_type":"cell","photo_profile_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/donor/photo/5057/23376572_10211397773400390_4424289025713600491_n.jpg","dms_internal_id":350706,"gender":null,"birthday":null,"type":"Individual","website":null},"order":{"id":5664,"payment_type":"credit_card","order_number":"1F2E5984-78B2-4DA4","completed_at":"2017-09-26T13:22:40.000-04:00","gateway_transaction_id":"58","add_or_deduct_fee":"deduct","total_add_fee":"0.0","total_deduct_fee":"0.0","status":"complete","payment_gateway_provider":"paypal_signature","payment_desc":"visa
+        1111","payout_at":null,"payment_profile":{"id":4455,"card_expiration_year":2029,"card_expiration_month":1,"last_four_digits":"1111"},"visit":{"id":"6bf5f84b-9944-4eab-aabf-448696dc7442","utm_campaign":null,"utm_source":null}},"event":{"item_type":"Event","id":106,"name":"Mustache!","status":"accepted","photo_url":"/assets/fallback/profile_default_project_image-c21d6cf3ad61f301b29134474efe5c2ecdef3f4ce07a54c12b9dab56a15c430c.png","contact_name":"Liisa","contact_email":"liisa.fetig@gmail.com","contact_phone":"301-555-5555","starts_at":"2019-05-12T14:26:00.000-04:00","ends_at":"2019-05-25T14:26:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin4.networkforgood-beta.com/events/106-cause-3-mustache","project_type":"event","dms_internal_id":null,"accepted":true,"location":"","street_address":"9625
+        Old Spring Rd","street_address2":"","city":"Kensington","state":"MD","zip_code":"20895","main_logo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/ui_configuration/main_logo/2546/HAT3.png","primary_color":"#01b0dd","details":"\u003cp\u003eddd\u003c/p\u003e"},"promo_code":null},{"item_type":"OrderItem","id":7049,"status":"complete","payment_type":"credit_card","purchased_at":"2017-09-26T13:23:18.000-04:00","updated_at":"2017-09-26T13:23:18.000-04:00","entity_id":501,"entity_subdomain":"spin4","description":"Mustache!
+        Ticket no FMV at $10","total_add_fee":"0.0","total_deduct_fee":"0.0","quantity":1,"price":"10.0","discount_amount":null,"ticket_type":{"item_type":"TicketType","id":344,"name":"Ticket
+        no FMV","event_id":106,"details":"","price":"10.0","fair_market_value":null,"total_available":null,"amount_sold":1,"available_from":null,"available_to":null,"updated_at":"2017-09-26T13:23:20.000-04:00","collect_guest_info":false,"dms_internal_id":null},"donor":{"id":5057,"first_name":"Liisa","last_name":"Fetig","email":"liisa.fetig@gmail.com","street_address":"1140
+        Connecticut Ave NW, Ste 700","street_address2":"Ste 700","city":"Washington","state":"DC","zip_code":"20036","country":"US","phone_number":"","phone_number_type":"cell","photo_profile_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/donor/photo/5057/23376572_10211397773400390_4424289025713600491_n.jpg","dms_internal_id":350706,"gender":null,"birthday":null,"type":"Individual","website":null},"order":{"id":5665,"payment_type":"credit_card","order_number":"D493508A-9F62-48C6","completed_at":"2017-09-26T13:23:18.000-04:00","gateway_transaction_id":"66","add_or_deduct_fee":"deduct","total_add_fee":"0.0","total_deduct_fee":"0.0","status":"complete","payment_gateway_provider":"paypal_signature","payment_desc":"visa
+        1111","payout_at":null,"payment_profile":{"id":4455,"card_expiration_year":2029,"card_expiration_month":1,"last_four_digits":"1111"},"visit":{"id":"6bf5f84b-9944-4eab-aabf-448696dc7442","utm_campaign":null,"utm_source":null}},"event":{"item_type":"Event","id":106,"name":"Mustache!","status":"accepted","photo_url":"/assets/fallback/profile_default_project_image-c21d6cf3ad61f301b29134474efe5c2ecdef3f4ce07a54c12b9dab56a15c430c.png","contact_name":"Liisa","contact_email":"liisa.fetig@gmail.com","contact_phone":"301-555-5555","starts_at":"2019-05-12T14:26:00.000-04:00","ends_at":"2019-05-25T14:26:00.000-04:00","time_zone":"Eastern
+        Time (US \u0026 Canada)","primary_call_to_action":"","public_url":"https://spin4.networkforgood-beta.com/events/106-cause-3-mustache","project_type":"event","dms_internal_id":null,"accepted":true,"location":"","street_address":"9625
+        Old Spring Rd","street_address2":"","city":"Kensington","state":"MD","zip_code":"20895","main_logo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/ui_configuration/main_logo/2546/HAT3.png","primary_color":"#01b0dd","details":"\u003cp\u003eddd\u003c/p\u003e"},"promo_code":null}]'
+  recorded_at: Fri, 29 Mar 2024 10:12:43 GMT
+recorded_with: VCR 6.2.0

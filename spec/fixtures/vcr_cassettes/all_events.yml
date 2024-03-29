@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.networkforgood-beta.com/api/v1/events?entity_id=428&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    uri: https://api.networkforgood-beta.com/api/v1/events?entity_id=428
     body:
       encoding: US-ASCII
       string: ''
