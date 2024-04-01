@@ -15,7 +15,7 @@ module NfgEvoRestClient
     post  :remove,          "/api/v1/donations/delete",               timeout: 60
 
     def param_fields
-      [{entity_id: 0}, :from_date_time, :to_date_time]
+      [:entity_id, :from_date_time, :to_date_time]
     end
   end
 end

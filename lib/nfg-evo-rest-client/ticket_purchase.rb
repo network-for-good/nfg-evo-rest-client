@@ -9,6 +9,6 @@ module NfgEvoRestClient
       PARAM_FIELDS
     end
 
-    PARAM_FIELDS = [{ entity_id: 0 }, :from_date_time, :to_date_time].freeze
+    PARAM_FIELDS = [:entity_id, :from_date_time, :to_date_time].freeze
   end
 end
