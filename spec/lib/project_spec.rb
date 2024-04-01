@@ -3,6 +3,14 @@
 require 'project'
 
 RSpec.describe NfgEvoRestClient::Project do
+  before do
+    NfgEvoRestClient.nfg_evo_rest_bearer_token = 'Bearer dummy_token'
+  end
+ 
+  after do
+    NfgEvoRestClient.nfg_evo_rest_bearer_token = ENV.fetch('NFG_BEARER_TOKEN', nil)
+  end
+  
   let(:id) { 1403 }
   let(:entity_id) { 68 }
   let(:query_params) { { entity_id: entity_id } }

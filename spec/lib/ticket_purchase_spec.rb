@@ -3,6 +3,13 @@
 require 'project'
 
 RSpec.describe NfgEvoRestClient::TicketPurchase do
+  before do
+    NfgEvoRestClient.nfg_evo_rest_bearer_token = 'Bearer dummy_token'
+  end
+
+  after do
+    NfgEvoRestClient.nfg_evo_rest_bearer_token = ENV.fetch('NFG_BEARER_TOKEN', nil)
+  end
   let(:id) { 7049 }
   let(:entity_id) { 501 }
   let(:query_params) { { entity_id: entity_id, from_date_time: '2017-09-26 17:00:00', to_date_time: '2017-09-26 18:00:00'} }

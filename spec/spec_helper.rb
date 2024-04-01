@@ -17,7 +17,7 @@ NFG_API_URL           = ENV.fetch('NFG_API_URL', 'https://api.networkforgood-bet
 NFG_USER_EMAIL        = ENV.fetch('NFG_USER_EMAIL', 'a@example.com')
 NFG_USER_TOKEN        = ENV.fetch('NFG_USER_TOKEN', 'exampletoken')
 NFG_DEFAULT_ENTITY_ID = ENV.fetch('NFG_DEFAULT_ENTITY_ID', 2) # 'admin' entity by default
-NFG_BEARER_TOKEN      = ENV.fetch('NFG_BEARER_TOKEN', 'eyJhbGciOiJIUz')
+NFG_BEARER_TOKEN      = ENV.fetch('NFG_BEARER_TOKEN', nil)
 
 # When developing the gem, you can override the above variables to point
 # to data in your local development environment. Do not change any saved VCR fixtures
