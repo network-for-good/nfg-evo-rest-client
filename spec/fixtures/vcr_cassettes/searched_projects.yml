@@ -1,0 +1,84 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/projects?entity_id=68&project_type=everyday&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 08 Apr 2024 07:50:11 GMT
+      Set-Cookie:
+      - AWSALB=4CScIEvFzk/QLtMBVCkK+ZkQIrx/3QJxQWFuAyzzkUa6vhhemhMuU8EwqhFvjO6T7bxt3D/DPgj4qJmVCNOYygdyzZmaScbLVraiv3jPzK99BrGHBYzRLyPtsCvJ;
+        Expires=Mon, 15 Apr 2024 07:50:11 GMT; Path=/
+      - AWSALBCORS=4CScIEvFzk/QLtMBVCkK+ZkQIrx/3QJxQWFuAyzzkUa6vhhemhMuU8EwqhFvjO6T7bxt3D/DPgj4qJmVCNOYygdyzZmaScbLVraiv3jPzK99BrGHBYzRLyPtsCvJ;
+        Expires=Mon, 15 Apr 2024 07:50:11 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 8bd0680e-6066-497b-b00a-f4b61f25cb55
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"2f060a594fb3fcec8fc501b9d7553b2e"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.194279'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 2583973e0ec58d9d3a773297f09412ee.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C2
+      X-Amz-Cf-Id:
+      - ZD49ypLhbqvEb-HXPTFZp79Wi9xEyTgHGPP3A1flEXF3F0RDV_jXmQ==
+    body:
+      encoding: UTF-8
+      string: '[{"item_type":"Project","id":1403,"name":"Support SUNNY FUTURES and
+        Healthy Babies!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1403/profile_healthy_start_2.jpg","start_date":"2013-04-24","end_date":"2013-09-30","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":15000,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1403-community-based-initiatives-support-sunny-futures-and-healthy-babies","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1403-community-based-initiatives-support-sunny-futures-and-healthy-babies/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1404,"name":"Give
+        Kids a Passport to Summer Fun!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1404/profile_summer_camp.jpg","start_date":"2013-04-24","end_date":"2013-07-31","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":10000,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1404-community-based-initiatives-give-kids-a-passport-to-summer-fun","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1404-community-based-initiatives-give-kids-a-passport-to-summer-fun/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1407,"name":"Don''t
+        miss the Women''s Health Conference!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1407/profile_womens_health_conference_.jpg","start_date":"2013-04-24","end_date":"2013-08-31","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":0,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1407-community-based-initiatives-don-t-miss-the-women-s-health-conference","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1407-community-based-initiatives-don-t-miss-the-women-s-health-conference/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1409,"name":"Support
+        SUNNY FUTURES and Healthy Babies!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1409/profile_healthy_start_2.jpg","start_date":null,"end_date":null,"hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":0,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1409-community-based-initiatives-support-sunny-futures-and-healthy-babies","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1409-community-based-initiatives-support-sunny-futures-and-healthy-babies/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1410,"name":"Give
+        Kids a Passport to Summer Fun!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1410/profile_summer_camp.jpg","start_date":null,"end_date":null,"hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":0,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1410-community-based-initiatives-give-kids-a-passport-to-summer-fun","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1410-community-based-initiatives-give-kids-a-passport-to-summer-fun/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1405,"name":"Support
+        Early Head Starts in Houston!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1405/profile_head_start.jpg","start_date":"2013-04-24","end_date":"2013-07-31","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":60000,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1405-choices-in-education-support-early-head-starts-in-houston","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1405-choices-in-education-support-early-head-starts-in-houston/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1408,"name":"Support
+        Early Head Starts in Houston!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1408/profile_head_start.jpg","start_date":null,"end_date":null,"hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":0,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1408-choices-in-education-support-early-head-starts-in-houston","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1408-choices-in-education-support-early-head-starts-in-houston/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null},{"item_type":"Project","id":1406,"name":"Welcome
+        New Neighbors in Houston!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1406/profile_new_neighbors.jpg","start_date":"2013-04-24","end_date":"2013-07-31","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":10000,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1406-immigration-citizenship-assistance-welcome-new-neighbors-in-houston","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1406-immigration-citizenship-assistance-welcome-new-neighbors-in-houston/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null}]'
+  recorded_at: Mon, 08 Apr 2024 07:50:12 GMT
+recorded_with: VCR 6.2.0
