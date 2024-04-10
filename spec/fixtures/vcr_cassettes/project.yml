@@ -1,0 +1,147 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/projects/116?entity_id=68&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 08 Apr 2024 07:46:26 GMT
+      Set-Cookie:
+      - AWSALB=F9R+v22Kkv3z+SnNOiFevgLboSf3w85giSlN3OZ58Zc19oOHK9x4mSdqsc70g+m/dRs5EFYe8cECE9a8rPry4HoIUt3WXtTQuC0onPC0Cn3ygmuZ/pjzo0+Zld+C;
+        Expires=Mon, 15 Apr 2024 07:46:26 GMT; Path=/
+      - AWSALBCORS=F9R+v22Kkv3z+SnNOiFevgLboSf3w85giSlN3OZ58Zc19oOHK9x4mSdqsc70g+m/dRs5EFYe8cECE9a8rPry4HoIUt3WXtTQuC0onPC0Cn3ygmuZ/pjzo0+Zld+C;
+        Expires=Mon, 15 Apr 2024 07:46:26 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 404 Not Found
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - 5f54c6fa-2d88-40c2-b027-76d150c216d2
+      X-Download-Options:
+      - noopen
+      X-Runtime:
+      - '0.118558'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 62d3246c0f76fde2b19b62c841c73d66.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C2
+      X-Amz-Cf-Id:
+      - oK9deTuNr666ikmdxgs_6J9oMi8OzA1kg1qyXxAZWbO1UbtO1r8c2Q==
+    body:
+      encoding: UTF-8
+      string: ''
+  recorded_at: Mon, 08 Apr 2024 07:46:27 GMT
+- request:
+    method: get
+    uri: https://api.networkforgood-beta.com/api/v1/projects/1406?entity_id=68&user_email=<NFG_USER_EMAIL>&user_token=<NFG_USER_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0
+      Accept:
+      - application/hal+json, application/json;q=0.5
+      Content-Type:
+      - application/json; charset=utf-8
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 08 Apr 2024 07:47:56 GMT
+      Set-Cookie:
+      - AWSALB=y2PGAtKa2mqs00MJAvFgIZgXoxii8BXvb7iKCFN15BYreWEj5X5aW4omtUxqP0oRiDgtUbS/trcdB1N7qI4yVEdRWqSsCT8C9B3PraPyjqR1AJcVtWio8QxbzvR3;
+        Expires=Mon, 15 Apr 2024 07:47:55 GMT; Path=/
+      - AWSALBCORS=y2PGAtKa2mqs00MJAvFgIZgXoxii8BXvb7iKCFN15BYreWEj5X5aW4omtUxqP0oRiDgtUbS/trcdB1N7qI4yVEdRWqSsCT8C9B3PraPyjqR1AJcVtWio8QxbzvR3;
+        Expires=Mon, 15 Apr 2024 07:47:55 GMT; Path=/; SameSite=None; Secure
+      Status:
+      - 200 OK
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Request-Id:
+      - c75419e4-4969-4f09-91f6-cbf9953714d4
+      X-Download-Options:
+      - noopen
+      Etag:
+      - W/"d84f4d260c620b7435e9eea7e866c928"
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Runtime:
+      - '0.188895'
+      X-Content-Type-Options:
+      - nosniff
+      X-Powered-By:
+      - Phusion Passenger(R)
+      Server:
+      - nginx + Phusion Passenger(R)
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 8105f0ab150eecf20c3e922a3608be3a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - MAA51-C2
+      X-Amz-Cf-Id:
+      - V6d-bfRoNtYQbEZOr_pvRDODKEispVVP0npaWAaSc4mOJzMKpRZLAA==
+    body:
+      encoding: UTF-8
+      string: '{"item_type":"Project","id":1406,"name":"Welcome New Neighbors in Houston!","contact_name":"","contact_phone_number":"713-667-9400","contact_email":"","photo_url":"https://nfg-sofun-development.s3.amazonaws.com/uploads/project/photo/1406/profile_new_neighbors.jpg","start_date":"2013-04-24","end_date":"2013-07-31","hosted_video_url":"","project_type":"everyday","status":"accepted","team_project":null,"ancestry":null,"goal_type":"total_amount_raised","goal":10000,"closed_date":null,"type":null,"public_url":"https://neighborhoodcenters.networkforgood-beta.com/projects/1406-immigration-citizenship-assistance-welcome-new-neighbors-in-houston","edit_url":"https://neighborhoodcenters.networkforgood-beta.com/admin/projects/1406-immigration-citizenship-assistance-welcome-new-neighbors-in-houston/edit","requires_designation_on_donation":null,"dms_internal_id":null,"accepted":true,"owner":null}'
+  recorded_at: Mon, 08 Apr 2024 07:47:56 GMT
+recorded_with: VCR 6.2.0

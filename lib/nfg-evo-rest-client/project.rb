@@ -13,14 +13,17 @@ module NfgEvoRestClient
     get :find, '/api/v1/projects/:id'
 
     before_request do |_name, request|
-      # HACK: I could not get the append_param_fields_if_any method in the Base
-      # class to work w/ entity_id. The following code does work. I would
-      # like to revisit in a future refactoring pass.
-      request.get_params[:entity_id] = request.object.entity_id
-      request.get_params[:search] = request.object.search
-    end
+      fields = request.object.respond_to?(:param_fields) ? request.object.param_fields : []
 
-    private
+      fields.each do |field_or_hash|
+        field, value = field_or_hash.is_a?(Symbol) ? [field_or_hash, nil] : field_or_hash.first
+        if request.object.respond_to?(field) && request.object.send(field).present?
+          request.get_params[field] = request.object.send(field)
+        elsif value
+          request.get_params[field] = value
+        end
+      end
+    end
 
     def param_fields
       PARAM_FIELDS
