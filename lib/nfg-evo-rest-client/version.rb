@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module NfgEvoRestClient
-  VERSION = '7.2.0'
+  VERSION = '1.4.5.donortrends'
 end
