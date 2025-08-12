@@ -15,7 +15,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 3.0.6
+        ruby-version: 3.4.2
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       if: ${{ steps.files.conclusion == 'success' && steps.files.outputs.added_modified != '' }}
     - name: Run RuboCop
